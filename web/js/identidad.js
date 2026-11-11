@@ -9,6 +9,6 @@
     tiendaUrl: "",
     precioVecino: "4,99 €",
     precioAspecto: "1,99 €",
-    cita: "sábado 21:30, hora peninsular"
+    cita: "sábado a las 21:30, hora de Madrid"
   };
 })();

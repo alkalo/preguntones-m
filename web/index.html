@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Preguntones: un servidor de Minecraft</title>
-  <meta name="description" content="Preguntones es un servidor de Minecraft Java: un survival de barrios. Reclamas un terreno, lo vendes a otros jugadores y el mundo no se borra. Dirección play.preguntones.es, versión 26.1.2.">
+  <meta name="description" content="Servidor de Minecraft Java 26.1.2. Marcas un terreno, construyes con más gente y el sábado a las 21:30 (hora de Madrid) hay una cita de una hora. Dirección: play.preguntones.es. Jugar es gratis.">
   <meta name="theme-color" content="#07140e">
   <link rel="icon" href="img/marca.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
       <button class="menu-abrir" type="button" aria-expanded="false" aria-controls="menu-principal"><span class="cuando-cerrado">Menú</span><span class="cuando-abierto">Cerrar</span></button>
       <nav class="menu" id="menu-principal" aria-label="Principal">
         <a href="index.html" aria-current="page">Inicio</a>
-        <a href="entrar.html">Entrar</a>
+        <a href="entrar.html">Cómo entrar</a>
         <a href="normas.html">Normas</a>
         <a href="tienda.html">Tienda</a>
         <a href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href">Discord</a>
@@ -34,33 +34,34 @@
       <div class="emblema">
         <img src="img/marca.jpg" alt="">
       </div>
-      <p class="estado"><span class="punto" aria-hidden="true"></span> Solo Java · <span data-campo="version">26.1.2</span> · sin puerto</p>
+      <p class="estado"><span class="punto" aria-hidden="true"></span> Minecraft Java · <span data-campo="version">26.1.2</span> · jugar es gratis</p>
       <h1 id="titulo">¿Te atreves<br><span class="brillo">a preguntar?</span></h1>
-      <p class="entradilla">Un barrio de Minecraft. Reclamas un terreno, se lo puedes vender a otro jugador y el sábado, a las 21:30, hay una pregunta. El mundo no se borra.</p>
+      <p class="entradilla">Preguntones es un servidor de Minecraft Java: un barrio en supervivencia. Marcas un terreno, construyes con más gente y puedes vender lo que haces. La cita es el <span data-campo="cita">sábado a las 21:30, hora de Madrid</span>, y dura una hora. Jugar es gratis.</p>
       <div class="portada-acciones">
         <button class="ip-capsula" id="copiar-ip" type="button" data-copiar-ip>
           <span class="ip-icono" aria-hidden="true"></span>
           <span data-campo="hostname">play.preguntones.es</span>
-          <span class="ip-accion">Copiar IP</span>
+          <span class="ip-accion">Copiar</span>
         </button>
-        <p class="copiado" id="copiado" hidden>Copiado. Pégalo en Multijugador.</p>
+        <p class="copiado" id="copiado" hidden>Copiado. Pégalo en Multijugador, en Dirección del servidor.</p>
+        <a class="boton" href="entrar.html">Cómo entrar, paso a paso</a>
         <a class="boton boton-discord" href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href"><span class="icono-discord" aria-hidden="true"></span> Unirse al Discord</a>
-        <a class="boton boton-tienda" href="tienda.html">Tienda</a>
+        <a class="boton boton-tienda" href="tienda.html">Ver la tienda</a>
       </div>
-      <p class="meta-juego">Java <strong data-campo="version">26.1.2</strong> · sin puerto · cita <span data-campo="cita">sábado 21:30, hora peninsular</span></p>
+      <p class="meta-juego">En el juego se escribe <strong data-campo="hostname">play.preguntones.es</strong>, con «play» delante. Esta web es preguntones.es. Java <strong data-campo="version">26.1.2</strong>. La pregunta: <span data-campo="cita">sábado a las 21:30, hora de Madrid</span>.</p>
     </section>
 
     <section class="seccion" aria-labelledby="barrio">
       <p class="kicker">El barrio</p>
-      <h2 class="titulo" id="barrio">Tres cosas, y el mundo se queda.</h2>
-      <p class="seccion-texto">Una parcela, una pregunta y gente a la que puedes venderle lo que has hecho. El mapa no se borra el lunes.</p>
+      <h2 class="titulo" id="barrio">Tres cosas, y tu casa se queda.</h2>
+      <p class="seccion-texto">Un terreno tuyo, una cita el sábado y gente a la que puedes venderle lo que has hecho. El mapa del barrio no se borra el lunes.</p>
       <div class="cartas">
         <article class="carta">
           <img src="img/barrio.jpg" alt="Casas de distintos colores separadas por caminos de tierra">
           <div class="carta-cuerpo">
             <p class="chip">Terreno</p>
             <h3>Tu parcela</h3>
-            <p>La pala de oro marca las dos esquinas. Lo de dentro es tuyo. Si te cansas, se lo vendes a otro jugador, en duros, no en euros.</p>
+            <p>Al entrar te dan una pala de oro. Marcas dos esquinas del suelo y el rectángulo de dentro es tuyo: el servidor impide que otros lo rompan. Si te cansas, se lo puedes vender a otro jugador. Se paga en duros, la moneda del barrio.</p>
           </div>
         </article>
         <article class="carta">
@@ -68,15 +69,15 @@
           <div class="carta-cuerpo">
             <p class="chip chip-oro">Sábado</p>
             <h3>La pregunta</h3>
-            <p>La cita es el <span data-campo="cita">sábado 21:30, hora peninsular</span>. Una pregunta, un rato, y el premio es un título o un aspecto. Los duros no se regalan.</p>
+            <p>El <span data-campo="cita">sábado a las 21:30, hora de Madrid</span>, durante una hora. En Canarias, a las 20:30. Hay un encargo: un tema para construir, llevar algo al cofre común o elegir entre dos planos. Vota quien está dentro a esa hora. El premio es un título o un adorno. No da duros.</p>
           </div>
         </article>
         <article class="carta">
           <img src="img/mascota.jpg" alt="Personaje de bloques con una pala de oro y una insignia de pregunta">
           <div class="carta-cuerpo">
-            <p class="chip chip-cielo">Barrio</p>
-            <h3>¿Y tú qué traes?</h3>
-            <p>Una casa rara, un huerto o una pregunta mejor. Minecraft Java <strong data-campo="version">26.1.2</strong>, cuenta de pago, sin Bedrock el día uno.</p>
+            <p class="chip chip-cielo">Para entrar</p>
+            <h3>Qué necesitas</h3>
+            <p>Minecraft Java <strong data-campo="version">26.1.2</strong>, el de ordenador y de pago. Consola, móvil y la versión de la Microsoft Store hoy no entran. El Discord es el tablón de avisos: se juega igual sin estar.</p>
           </div>
         </article>
       </div>
@@ -84,42 +85,87 @@
 
     <section class="seccion" aria-labelledby="porque">
       <p class="kicker">Por qué Preguntones</p>
-      <h2 class="titulo" id="porque">Un servidor para quedarse, no para pagar el atajo.</h2>
+      <h2 class="titulo" id="porque">Un sitio para quedarse.</h2>
       <div class="motivos">
         <article class="motivo">
           <p class="sello" aria-hidden="true">01</p>
-          <h3>El mundo no se borra</h3>
-          <p>No hay reinicio del mapa al cambiar la semana. Lo que levantas sigue ahí mientras el servidor exista.</p>
+          <h3>Tu casa se queda</h3>
+          <p>El barrio, el mundo donde construyes, sigue en pie. A las 05:00, hora de Madrid, el servidor se reinicia un momento: es un apagado técnico y tu casa sigue. El mundo de materiales, el de ir a picar, se regenera el día que se avise.</p>
         </article>
         <article class="motivo">
           <p class="sello sello-oro" aria-hidden="true">02</p>
-          <h3>Duros, no euros</h3>
-          <p>La moneda del barrio sale de jugar y de venderle a otro jugador. El euro no fabrica duros, equipo ni terreno.</p>
+          <h3>La moneda son los duros</h3>
+          <p>Los duros salen de jugar y de venderle algo a otro jugador. Con euros no se compran duros, herramientas ni terreno. Tampoco se cambian por dinero de verdad.</p>
         </article>
         <article class="motivo">
           <p class="sello sello-cielo" aria-hidden="true">03</p>
           <h3>La tienda solo adorna</h3>
-          <p>Vecino, <strong><span data-campo="precioVecino">4,99 €</span> IVA incluido</strong>. Un aspecto suelto, <strong><span data-campo="precioAspecto">1,99 €</span> IVA incluido</strong>. Color, estela, tag y mensaje. Hoy esta web no cobra.</p>
+          <p>El paquete Vecino cuesta <strong><span data-campo="precioVecino">4,99 €</span> con IVA</strong>. Un adorno suelto, <strong><span data-campo="precioAspecto">1,99 €</span> con IVA</strong>. Color, rastro, etiqueta y frase al entrar. Hoy esta web no cobra.</p>
         </article>
         <article class="motivo">
           <p class="sello" aria-hidden="true">04</p>
-          <h3>Java, y ya</h3>
-          <p>Cliente <strong data-campo="version">26.1.2</strong>. Dirección <strong data-campo="hostname">play.preguntones.es</strong>. Sin puerto: el DNS lleva la pista.</p>
+          <h3>Una dirección</h3>
+          <p>Cliente <strong data-campo="version">26.1.2</strong>. En Multijugador escribes <strong data-campo="hostname">play.preguntones.es</strong> y nada más: sin dos puntos ni un número detrás.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="palabras">
+      <p class="kicker">Diccionario</p>
+      <h2 class="titulo" id="palabras">Palabras del barrio</h2>
+      <p class="seccion-texto">Si acabas de llegar, estas son las que vas a oír. El resto de la web las usa así.</p>
+      <div class="pila">
+        <article class="hoja">
+          <dl class="datos">
+            <div>
+              <dt>Duros</dt>
+              <dd>La moneda del barrio. Se consigue jugando y vendiendo a otros jugadores. Un euro no la fabrica, y no vale fuera de este servidor.</dd>
+            </div>
+            <div>
+              <dt>Terreno</dt>
+              <dd>Tu parcela. Con la pala de oro marcas dos esquinas y el rectángulo queda protegido. Si el juego dice «claim», habla de eso.</dd>
+            </div>
+            <div>
+              <dt>La pregunta</dt>
+              <dd>La cita del <span data-campo="cita">sábado a las 21:30, hora de Madrid</span> (en Canarias, una hora menos). Dura una hora. El premio es un título o un adorno, no duros.</dd>
+            </div>
+            <div>
+              <dt>Título</dt>
+              <dd>Una palabra que se ve junto a tu nombre, como un reconocimiento. No trae objetos ni te hace más fuerte.</dd>
+            </div>
+            <div>
+              <dt>Adorno</dt>
+              <dd>Algo que se ve y no cambia el juego: el color del nombre, un rastro al caminar, una etiqueta corta o una frase cuando entras.</dd>
+            </div>
+            <div>
+              <dt>Java</dt>
+              <dd>El Minecraft de ordenador, el de pago, en la versión <span data-campo="version">26.1.2</span>. El número tiene que coincidir o el servidor no te deja entrar.</dd>
+            </div>
+            <div>
+              <dt>Bedrock</dt>
+              <dd>La otra edición: consola, móvil y la de la Microsoft Store en Windows. Hoy no entra. Si algún día se abre, se dirá aquí y en el Discord.</dd>
+            </div>
+            <div>
+              <dt>Discord</dt>
+              <dd>El tablón: avisos, ayuda y la voz del sábado (sala voz-sabado). No hace falta un rol ni estar en Discord para jugar.</dd>
+            </div>
+          </dl>
         </article>
       </div>
     </section>
 
     <section class="cierre" aria-labelledby="listo">
       <p class="kicker">Multijugador</p>
-      <h2 class="titulo" id="listo">¿Listo para preguntar?</h2>
-      <p class="entradilla">Abre Minecraft Java, copia la dirección y entra al barrio. Jugar no pasa por la tienda. <a href="entrar.html">¿Primera vez? Cómo entrar, paso a paso.</a></p>
+      <h2 class="titulo" id="listo">Ya puedes entrar</h2>
+      <p class="entradilla">Abre Minecraft Java, copia la dirección y pégala en Multijugador, en Dirección del servidor. Si es tu primera vez, la guía va paso a paso.</p>
       <div class="portada-acciones">
         <button class="ip-capsula" type="button" data-copiar-ip>
           <span class="ip-icono" aria-hidden="true"></span>
           <span data-campo="hostname">play.preguntones.es</span>
-          <span class="ip-accion">Copiar IP</span>
+          <span class="ip-accion">Copiar</span>
         </button>
-        <p class="copiado" hidden>Copiado. Pégalo en Multijugador.</p>
+        <p class="copiado" hidden>Copiado. Pégalo en Multijugador, en Dirección del servidor.</p>
+        <a class="boton" href="entrar.html">Cómo entrar, paso a paso</a>
         <a class="boton boton-discord" href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href"><span class="icono-discord" aria-hidden="true"></span> Unirse al Discord</a>
         <a class="boton boton-tienda" href="tienda.html">Ver la tienda</a>
       </div>
@@ -137,7 +183,7 @@
       <nav aria-label="Pie">
         <ul class="pie-enlaces">
           <li><a href="index.html" aria-current="page">Inicio</a></li>
-          <li><a href="entrar.html">Entrar</a></li>
+          <li><a href="entrar.html">Cómo entrar</a></li>
           <li><a href="normas.html">Normas</a></li>
           <li><a href="tienda.html">Tienda</a></li>
           <li><a href="aviso-legal.html">Aviso legal</a></li>
@@ -146,7 +192,7 @@
           <li><a href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href">Discord</a></li>
         </ul>
       </nav>
-      <p>Servidor <strong data-campo="hostname">play.preguntones.es</strong> · Java <strong data-campo="version">26.1.2</strong> · Cita <span data-campo="cita">sábado 21:30, hora peninsular</span>.</p>
+      <p>Servidor <strong data-campo="hostname">play.preguntones.es</strong> · Minecraft Java <strong data-campo="version">26.1.2</strong> · La pregunta: <span data-campo="cita">sábado a las 21:30, hora de Madrid</span>.</p>
     </div>
   </footer>
   <script src="js/identidad.js"></script>

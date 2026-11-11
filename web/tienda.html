@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tienda · Preguntones</title>
-  <meta name="description" content="Tienda de cosméticos de Preguntones. Rango Vecino: 4,99 € IVA incluido, pago único. Aspecto suelto de ejemplo: 1,99 € IVA incluido. Hoy no se cobra.">
+  <meta name="description" content="Tienda de adornos de Preguntones. Jugar es gratis. Paquete Vecino: 4,99 € con IVA, un solo pago. Un adorno suelto: 1,99 € con IVA. Hoy esta página no cobra.">
   <meta name="theme-color" content="#07140e">
   <link rel="icon" href="img/marca.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
       <button class="menu-abrir" type="button" aria-expanded="false" aria-controls="menu-principal"><span class="cuando-cerrado">Menú</span><span class="cuando-abierto">Cerrar</span></button>
       <nav class="menu" id="menu-principal" aria-label="Principal">
         <a href="index.html">Inicio</a>
-        <a href="entrar.html">Entrar</a>
+        <a href="entrar.html">Cómo entrar</a>
         <a href="normas.html">Normas</a>
         <a href="tienda.html" aria-current="page">Tienda</a>
         <a href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href">Discord</a>
@@ -30,44 +30,44 @@
   <main id="contenido" class="envoltorio" tabindex="-1">
     <p class="kicker">Solo adornos</p>
     <h1>Tienda de <span data-campo="nombre">Preguntones</span></h1>
-    <p class="entradilla">Aquí solo hay adornos. El precio que lees es el total, en euros, con el IVA incluido, y lo ves antes de pagar. Nada de espadas.</p>
+    <p class="entradilla">Jugar es gratis. Aquí solo se anuncian adornos: cambian cómo te ves, no cómo juegas. El precio que lees es el total, en euros, con el IVA incluido. No se suma nada después.</p>
     <p><img class="retrato" src="img/cofre.jpg" alt="Cofre de roble con una etiqueta, una gorra y un frasco de chispas"></p>
 
     <p class="aviso-oficial frase-oficial"><span data-campo="nombre">Preguntones</span> no es un producto oficial de Minecraft y no está aprobado por Mojang ni por Microsoft.</p>
 
-    <p>Hay dos precios publicados. El rango cosmético Vecino cuesta <strong><span data-campo="precioVecino">4,99 €</span> IVA incluido</strong>, pago único. Un aspecto suelto de ejemplo cuesta <strong><span data-campo="precioAspecto">1,99 €</span> IVA incluido</strong>, pago único. Ninguno de los dos se suma con un impuesto después.</p>
+    <p>Hay dos precios. El paquete Vecino cuesta <strong><span data-campo="precioVecino">4,99 €</span> con IVA</strong>, un solo pago. Un adorno suelto de ejemplo cuesta <strong><span data-campo="precioAspecto">1,99 €</span> con IVA</strong>, un solo pago. Ninguno de los dos lleva un impuesto aparte.</p>
 
     <div class="productos">
       <article class="hoja">
-        <p class="kicker">Rango cosmético</p>
+        <p class="kicker">Paquete de adornos</p>
         <h2>Vecino</h2>
         <p class="precio"><span data-campo="precioVecino">4,99 €</span></p>
-        <p class="precio-nota">IVA incluido. Pago único.</p>
-        <h3>Qué lleva el paquete</h3>
+        <p class="precio-nota">IVA incluido. Se paga una vez. No es una cuota.</p>
+        <h3>Qué incluye</h3>
         <ul>
-          <li>Color del nombre: el nick se ve de un color.</li>
-          <li>Estela: un rastro visible al caminar.</li>
-          <li>Tag: una etiqueta corta junto al nombre.</li>
-          <li>Mensaje de entrada: una línea cuando entras al servidor.</li>
+          <li>Color del nombre: tu nombre en el juego se ve de un color.</li>
+          <li>Rastro: unas partículas que te siguen al caminar.</li>
+          <li>Etiqueta: una palabra corta al lado del nombre.</li>
+          <li>Mensaje de entrada: una frase en el chat cuando entras al servidor.</li>
         </ul>
-        <p>Los cuatro van juntos. Se ven. No añaden fuerza, vida, duros ni terreno. El color concreto, el texto del tag y el mensaje se concretan al entregarlo, y eso no cambia el precio.</p>
-        <p>El cosmético permanece mientras el servidor exista.</p>
+        <p>Los cuatro van juntos. Se ven. No dan fuerza, vida, duros ni terreno. El color, el texto de la etiqueta y la frase se concretan al entregarlo, y eso no cambia el precio.</p>
+        <p>El adorno dura mientras el servidor exista. Los duros son la moneda del barrio y no entran en este paquete.</p>
       </article>
 
       <article class="hoja">
         <p class="kicker">De ejemplo</p>
-        <h2>Aspecto suelto</h2>
+        <h2>Un adorno suelto</h2>
         <p class="precio"><span data-campo="precioAspecto">1,99 €</span></p>
-        <p class="precio-nota">IVA incluido. Pago único, por cada aspecto.</p>
-        <h3>Qué lleva el paquete</h3>
-        <p>Un solo cosmético. De ejemplo, uno de estos:</p>
+        <p class="precio-nota">IVA incluido. Un solo pago por cada adorno.</p>
+        <h3>Qué incluye</h3>
+        <p>Un solo adorno, uno de estos:</p>
         <ul>
           <li>Color del nombre.</li>
-          <li>Estela.</li>
-          <li>Tag.</li>
-          <li>Mensaje de entrada.</li>
+          <li>Rastro al caminar.</li>
+          <li>Etiqueta junto al nombre.</li>
+          <li>Frase cuando entras.</li>
         </ul>
-        <p><span data-campo="precioAspecto">1,99 €</span> es el total de un aspecto, no el de los cuatro. Los cuatro juntos son el rango Vecino, a <span data-campo="precioVecino">4,99 €</span>. También permanece mientras el servidor exista, y tampoco cambia cómo juegas.</p>
+        <p><span data-campo="precioAspecto">1,99 €</span> es el total de uno, no el de los cuatro. Los cuatro juntos son el paquete Vecino, a <span data-campo="precioVecino">4,99 €</span>. También dura mientras el servidor exista, y tampoco cambia cómo juegas.</p>
       </article>
     </div>
 
@@ -76,27 +76,28 @@
       <ul>
         <li>Equipo, armas, armadura, herramientas ni encantamientos.</li>
         <li>Duros, la moneda del servidor.</li>
-        <li>Claims, terrenos ni ampliaciones de protección.</li>
-        <li>Cajas o botín aleatorio.</li>
-        <li>Unbans, perdones o acortar una sanción.</li>
-        <li>Vuelo u otra forma de moverte que el resto no tenga.</li>
+        <li>Terrenos, parcelas ni ampliaciones de la protección.</li>
+        <li>Cajas o premios al azar.</li>
+        <li>Perdones, o acortar un castigo.</li>
+        <li>Vuelo, o cualquier forma de moverte que el resto no tenga.</li>
+        <li>Colarte delante en la entrada, o un potenciador para avanzar más rápido.</li>
         <li>Ventaja en la pregunta del sábado.</li>
-        <li>Premios en efectivo.</li>
+        <li>Premios en dinero de verdad.</li>
       </ul>
-      <p>La regla de juego está en las <a href="normas.html">normas</a>: el euro no compra equipo, duros ni claims.</p>
+      <p>La regla de juego está en las <a href="normas.html">normas</a>: con euros no se compran herramientas, duros ni terreno.</p>
     </article>
 
     <article class="hoja" id="pago">
-      <h2>Enlace de pago</h2>
-      <p id="texto-sin-cobro">El cobro real será el checkout de Tebex cuando esté enlazado. En ese checkout verás otra vez el precio total, con el IVA incluido, antes de confirmar.</p>
-      <p class="placa" id="sin-cobro">Hoy no hay enlace de pago. Esta página no cobra y no te lleva a ninguna pasarela.</p>
-      <p id="texto-con-cobro" hidden>El cobro se hace en Tebex, no en esta página. El enlace abre esa tienda: allí ves otra vez el total, con el IVA incluido, antes de confirmar.</p>
+      <h2>Cómo se pagará</h2>
+      <p id="texto-sin-cobro">Cuando se pueda pagar, el cobro será en Tebex, una tienda externa. En esa página verás otra vez el precio total, con el IVA incluido, antes de confirmar. El botón de esta web solo te llevará allí.</p>
+      <p class="placa" id="sin-cobro">Hoy no hay botón de pago. Esta página no cobra y no te manda a ningún sitio para pagar.</p>
+      <p id="texto-con-cobro" hidden>El pago se hace en Tebex, la tienda externa, no en esta página. El enlace abre esa tienda: allí ves otra vez el total, con el IVA incluido, antes de confirmar.</p>
       <div class="hero-acciones" id="con-cobro" hidden>
-        <a class="boton" href="" data-campo="tiendaUrl" data-campo-modo="solo-href">Comprar Vecino</a>
-        <a class="boton boton-linea" href="" data-campo="tiendaUrl" data-campo-modo="solo-href">Comprar aspecto suelto</a>
+        <a class="boton" href="" data-campo="tiendaUrl" data-campo-modo="solo-href">Comprar el paquete Vecino</a>
+        <a class="boton boton-linea" href="" data-campo="tiendaUrl" data-campo-modo="solo-href">Comprar un adorno suelto</a>
       </div>
-      <p>Hoy no hay cobro. Cuando lo haya, el aviso y el desistimiento se hacen en Discord, canal soporte.</p>
-      <p>Tienes 14 días para desistir. En el cosmético digital, ese derecho solo se pierde si pides ejecutarlo ya y te lo confirmamos. El detalle, el contenido de cada paquete y la duración están en las <a href="condiciones.html">condiciones de compra</a>. Los datos, en <a href="privacidad.html">privacidad</a>.</p>
+      <p>El aviso de la compra, la entrega y la devolución se hacen en el Discord, canal soporte.</p>
+      <p>Tienes 14 días para echarte atrás y pedir el dinero de vuelta. En un adorno digital, ese derecho solo se pierde si pides que te lo activemos ya y te lo confirmamos por escrito. El detalle está en las <a href="condiciones.html">condiciones de compra</a>. Los datos, en <a href="privacidad.html">privacidad</a>.</p>
     </article>
   </main>
   <footer class="pie">
@@ -106,7 +107,7 @@
       <nav aria-label="Pie">
         <ul class="pie-enlaces">
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="entrar.html">Entrar</a></li>
+          <li><a href="entrar.html">Cómo entrar</a></li>
           <li><a href="normas.html">Normas</a></li>
           <li><a href="tienda.html" aria-current="page">Tienda</a></li>
           <li><a href="aviso-legal.html">Aviso legal</a></li>
@@ -115,7 +116,7 @@
           <li><a href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href">Discord</a></li>
         </ul>
       </nav>
-      <p>Servidor <strong data-campo="hostname">play.preguntones.es</strong> · Java <strong data-campo="version">26.1.2</strong> · Cita <span data-campo="cita">sábado 21:30, hora peninsular</span>.</p>
+      <p>Servidor <strong data-campo="hostname">play.preguntones.es</strong> · Minecraft Java <strong data-campo="version">26.1.2</strong> · La pregunta: <span data-campo="cita">sábado a las 21:30, hora de Madrid</span>.</p>
     </div>
   </footer>
   <script src="js/identidad.js"></script>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Entrar · Preguntones</title>
-  <meta name="description" content="Cómo entrar en Preguntones con Minecraft Java 26.1.2. Añade el servidor play.preguntones.es, sin puerto. Bedrock no está abierto el día uno.">
+  <title>Cómo entrar · Preguntones</title>
+  <meta name="description" content="Cómo entrar en Preguntones: Minecraft Java 26.1.2, cuenta de pago y la dirección play.preguntones.es, sin números detrás. Consola y móvil hoy no entran.">
   <meta name="theme-color" content="#07140e">
   <link rel="icon" href="img/marca.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
       <button class="menu-abrir" type="button" aria-expanded="false" aria-controls="menu-principal"><span class="cuando-cerrado">Menú</span><span class="cuando-abierto">Cerrar</span></button>
       <nav class="menu" id="menu-principal" aria-label="Principal">
         <a href="index.html">Inicio</a>
-        <a href="entrar.html" aria-current="page">Entrar</a>
+        <a href="entrar.html" aria-current="page">Cómo entrar</a>
         <a href="normas.html">Normas</a>
         <a href="tienda.html">Tienda</a>
         <a href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href">Discord</a>
@@ -29,23 +29,24 @@
   </header>
   <main id="contenido" class="envoltorio medio" tabindex="-1">
     <p class="kicker">Minecraft Java</p>
-    <h1>Entrar en <span data-campo="nombre">Preguntones</span></h1>
-    <p class="entradilla">Cuenta de pago, cliente <span data-campo="version">26.1.2</span> y la dirección <span data-campo="hostname">play.preguntones.es</span>. Sin puerto.</p>
+    <h1>Cómo entrar en <span data-campo="nombre">Preguntones</span></h1>
+    <p class="entradilla">Hace falta el Minecraft de ordenador, de pago, en la versión <span data-campo="version">26.1.2</span>. En Multijugador se escribe <span data-campo="hostname">play.preguntones.es</span> y nada más.</p>
+    <p class="placa">play.preguntones.es es el servidor. preguntones.es es esta web. Si falta el «play», no estás entrando al juego.</p>
 
-    <section class="tira" aria-label="Dirección para copiar">
+    <section class="tira" aria-label="Datos para copiar">
       <div>
         <p class="kicker">Dirección del servidor</p>
         <p class="ip" data-campo="hostname">play.preguntones.es</p>
-        <button class="boton boton-chico" type="button" data-copiar-ip>Copiar IP</button>
-        <p class="copiado" hidden>Copiado. Pégalo en Multijugador.</p>
+        <button class="boton boton-chico" type="button" data-copiar-ip>Copiar dirección</button>
+        <p class="copiado" hidden>Copiado. Pégalo en Multijugador, en Dirección del servidor.</p>
       </div>
       <div>
         <p class="kicker">Versión exacta</p>
         <p class="ip" data-campo="version">26.1.2</p>
       </div>
       <div>
-        <p class="kicker">Puerto</p>
-        <p class="ip">Ninguno</p>
+        <p class="kicker">¿Y el puerto?</p>
+        <p class="ip">No hace falta</p>
       </div>
     </section>
 
@@ -53,51 +54,72 @@
       <article class="hoja">
         <h2>Qué tienes que tener</h2>
         <ul>
-          <li>Minecraft Java con una cuenta de pago. Si no has comprado el juego, el servidor te rechaza.</li>
-          <li>El cliente en la versión <strong data-campo="version">26.1.2</strong>. Tiene que ser esa, exacta.</li>
-          <li>Sesión iniciada en esa cuenta, en el lanzador oficial, para poder elegir la versión antes de pulsar Jugar.</li>
+          <li>Minecraft Java comprado. Es el de ordenador, el que se abre con el lanzador oficial. Si no lo has comprado, el servidor te rechaza.</li>
+          <li>La versión <strong data-campo="version">26.1.2</strong>, exacta. Otra versión, aunque sea parecida, no entra.</li>
+          <li>La sesión iniciada en esa cuenta, dentro del lanzador, antes de pulsar Jugar.</li>
         </ul>
+        <p>Consola, móvil y la versión de la Microsoft Store son otra edición. Abajo está explicado.</p>
+      </article>
+
+      <article class="hoja">
+        <h2>Elegir la versión 26.1.2</h2>
+        <ol class="pasos">
+          <li>Abre el lanzador de Minecraft e inicia sesión con la cuenta que tiene el juego comprado.</li>
+          <li>Entra en Instalaciones. Si el lanzador está en inglés, se llama Installations.</li>
+          <li>Crea una instalación nueva, o edita la que uses, y elige la versión <strong data-campo="version">26.1.2</strong>.</li>
+          <li>Vuelve a la pantalla principal y pulsa Jugar con esa instalación.</li>
+        </ol>
+        <p>Si al darle a Jugar el número de versión es otro, el servidor no te va a reconocer. Cámbialo antes de buscar la dirección.</p>
       </article>
 
       <article class="hoja">
         <h2>Añadir el servidor</h2>
         <ol class="pasos">
-          <li>Abre Minecraft Java en la versión <span data-campo="version">26.1.2</span>.</li>
-          <li>Entra en Multijugador.</li>
-          <li>Pulsa Añadir servidor.</li>
-          <li>En el nombre del servidor escribe <span data-campo="nombre">Preguntones</span>. Ese nombre es solo para tu lista.</li>
-          <li>En la dirección del servidor escribe <strong data-campo="hostname">play.preguntones.es</strong>.</li>
-          <li>No añadas puerto. Ni dos puntos, ni un número al final de la dirección.</li>
+          <li>Dentro del juego, entra en Multijugador. En inglés: Multiplayer.</li>
+          <li>Pulsa Añadir servidor. En inglés: Add Server.</li>
+          <li>En el nombre escribe <span data-campo="nombre">Preguntones</span>, o el que quieras. Ese nombre solo se ve en tu lista.</li>
+          <li>En Dirección del servidor escribe <strong data-campo="hostname">play.preguntones.es</strong>. En inglés el campo se llama Server Address.</li>
+          <li>No añadas dos puntos ni un número al final. La dirección sola ya sabe a qué puerta llamar.</li>
           <li>Guarda y entra.</li>
         </ol>
-        <p>Si tu juego está en inglés, los botones se llaman Multiplayer y Add Server. La dirección es la misma.</p>
-        <p>No hace falta el puerto porque el DNS de <span data-campo="hostname">play.preguntones.es</span> llevará un registro SRV. Ese registro le dice al juego a qué puerto conectarse. Si pegas un puerto a mano, te saltas esa pista y puedes no entrar.</p>
+        <p>Si pegas un puerto a mano, por ejemplo :25565, te saltas esa pista y puedes quedarte fuera.</p>
       </article>
 
       <article class="hoja">
-        <h2>La primera sesión</h2>
+        <h2>La primera vez dentro</h2>
         <ul>
-          <li>Apareces en el spawn, la plaza de entrada del barrio.</li>
-          <li>Recibes una pala de oro de GriefPrevention. Con ella marcas las dos esquinas del terreno que reclamas. Lo de dentro queda protegido.</li>
-          <li>Recibes unos duros de entrada, para poder empezar a tratar con el barrio. Los duros se consiguen jugando. No están a la venta.</li>
+          <li>Apareces en la plaza de entrada del barrio.</li>
+          <li>Recibes una pala de oro. Con ella marcas dos esquinas del suelo. El rectángulo de dentro queda protegido: es tu terreno. Si el juego lo llama claim, es eso.</li>
+          <li>Recibes unos duros para el primer intercambio. Los duros son la moneda del barrio. Se consiguen jugando. No están a la venta.</li>
         </ul>
-        <p>La pala y los duros de entrada te los da el servidor. No se compran en la <a href="tienda.html">tienda</a>.</p>
+        <p>La pala y esos duros te los da el servidor. No se compran en la <a href="tienda.html">tienda</a>. Antes de construir, lee las <a href="normas.html">normas</a>.</p>
       </article>
 
       <article class="hoja">
-        <h2>Bedrock no está abierto el día uno</h2>
-        <p>El día de la apertura no hay entrada por Bedrock. Ni consola, ni móvil, ni la edición Bedrock de Windows. Solo Minecraft Java, en la versión <strong data-campo="version">26.1.2</strong>, con cuenta de pago.</p>
-        <p>Si más adelante se abre Bedrock, se dirá en esta página y en el <a href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href">Discord</a>. Hoy no.</p>
+        <h2>Qué se queda y qué se regenera</h2>
+        <ul>
+          <li>Lo que construyes en el barrio se queda. El lunes sigue ahí.</li>
+          <li>A las 05:00, hora de Madrid, el servidor se reinicia un momento. Es un apagado técnico: no borra tu casa.</li>
+          <li>El mundo de materiales, el de ir a picar lejos de la casa, se regenera el día que se avise en el Discord, canal anuncios.</li>
+        </ul>
+      </article>
+
+      <article class="hoja">
+        <h2>Si juegas en consola, móvil o en la Microsoft Store</h2>
+        <p>Esa edición se llama Bedrock. Hoy no hay entrada por ahí: ni PlayStation, ni Xbox, ni Switch, ni móvil, ni la app de Minecraft de Windows.</p>
+        <p>Hace falta Minecraft Java en el ordenador, versión <strong data-campo="version">26.1.2</strong>, con la cuenta de pago. Si más adelante se abre Bedrock, se dirá en esta página y en el <a href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href">Discord</a>.</p>
       </article>
 
       <article class="hoja">
         <h2>Si no conecta</h2>
         <ul>
-          <li>Comprueba que el cliente es exactamente la <span data-campo="version">26.1.2</span>.</li>
-          <li>Borra cualquier puerto que hayas pegado detrás de <span data-campo="hostname">play.preguntones.es</span>.</li>
-          <li>Mira que la cuenta sea de pago y que hayas iniciado sesión en ella.</li>
+          <li>Mira que la versión del lanzador sea exactamente la <span data-campo="version">26.1.2</span>.</li>
+          <li>Borra cualquier dos puntos o número que hayas pegado detrás de <span data-campo="hostname">play.preguntones.es</span>.</li>
+          <li>Comprueba que la cuenta tenga el juego comprado y que hayas iniciado sesión en el lanzador.</li>
+          <li>Comprueba que la dirección lleve el «play» delante. preguntones.es a secas es esta web.</li>
         </ul>
-        <p>Si sigue igual, pregúntalo en el Discord <a class="enlace-largo" href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="enlace">https://discord.gg/ZjcnvSkqsQ</a>, canal soporte. Antes de construir, lee las <a href="normas.html">normas</a>.</p>
+        <p>Si sigue igual, escríbelo en el Discord <a class="enlace-largo" href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="enlace">https://discord.gg/ZjcnvSkqsQ</a>, canal soporte. Di tu nombre dentro del juego y qué te sale en pantalla. No mandes contraseñas, correos ni códigos de la cuenta de Microsoft: el equipo no los pide.</p>
+        <p>Un rol de Discord no abre ni cierra el servidor. Se juega igual sin estar en el Discord.</p>
       </article>
     </div>
   </main>
@@ -108,7 +130,7 @@
       <nav aria-label="Pie">
         <ul class="pie-enlaces">
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="entrar.html" aria-current="page">Entrar</a></li>
+          <li><a href="entrar.html" aria-current="page">Cómo entrar</a></li>
           <li><a href="normas.html">Normas</a></li>
           <li><a href="tienda.html">Tienda</a></li>
           <li><a href="aviso-legal.html">Aviso legal</a></li>
@@ -117,7 +139,7 @@
           <li><a href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href">Discord</a></li>
         </ul>
       </nav>
-      <p>Servidor <strong data-campo="hostname">play.preguntones.es</strong> · Java <strong data-campo="version">26.1.2</strong> · Cita <span data-campo="cita">sábado 21:30, hora peninsular</span>.</p>
+      <p>Servidor <strong data-campo="hostname">play.preguntones.es</strong> · Minecraft Java <strong data-campo="version">26.1.2</strong> · La pregunta: <span data-campo="cita">sábado a las 21:30, hora de Madrid</span>.</p>
     </div>
   </footer>
   <script src="js/identidad.js"></script>

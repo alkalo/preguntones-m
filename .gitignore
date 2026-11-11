@@ -1,0 +1,5 @@
+# Copia viva del servidor. La fuente es el panel de GamzyHost.
+/servidor/
+
+# Dependencia local del sincronizador
+/scripts/node_modules/

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Preguntones: un servidor de Minecraft</title>
+  <meta name="description" content="Preguntones es un servidor de Minecraft Java: un survival de barrios. Reclamas un terreno, lo vendes a otros jugadores y el mundo no se borra. Dirección play.preguntones.es, versión 26.1.2.">
+  <meta name="theme-color" content="#07140e">
+  <link rel="icon" href="img/marca.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+    <div class="envoltorio barra">
+      <a class="marca" href="index.html"><span data-campo="nombre">Preguntones</span></a>
+      <button class="menu-abrir" type="button" aria-expanded="false" aria-controls="menu-principal"><span class="cuando-cerrado">Menú</span><span class="cuando-abierto">Cerrar</span></button>
+      <nav class="menu" id="menu-principal" aria-label="Principal">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="entrar.html">Entrar</a>
+        <a href="normas.html">Normas</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href">Discord</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido" class="envoltorio" tabindex="-1">
+    <section class="portada" aria-labelledby="titulo">
+      <span class="rombo rombo-a" aria-hidden="true"></span>
+      <span class="rombo rombo-b" aria-hidden="true"></span>
+      <div class="emblema">
+        <img src="img/marca.jpg" alt="">
+      </div>
+      <p class="estado"><span class="punto" aria-hidden="true"></span> Solo Java · <span data-campo="version">26.1.2</span> · sin puerto</p>
+      <h1 id="titulo">¿Te atreves<br><span class="brillo">a preguntar?</span></h1>
+      <p class="entradilla">Un barrio de Minecraft. Reclamas un terreno, se lo puedes vender a otro jugador y el sábado, a las 21:30, hay una pregunta. El mundo no se borra.</p>
+      <div class="portada-acciones">
+        <button class="ip-capsula" id="copiar-ip" type="button" data-copiar-ip>
+          <span class="ip-icono" aria-hidden="true"></span>
+          <span data-campo="hostname">play.preguntones.es</span>
+          <span class="ip-accion">Copiar IP</span>
+        </button>
+        <p class="copiado" id="copiado" hidden>Copiado. Pégalo en Multijugador.</p>
+        <a class="boton boton-discord" href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href"><span class="icono-discord" aria-hidden="true"></span> Unirse al Discord</a>
+        <a class="boton boton-tienda" href="tienda.html">Tienda</a>
+      </div>
+      <p class="meta-juego">Java <strong data-campo="version">26.1.2</strong> · sin puerto · cita <span data-campo="cita">sábado 21:30, hora peninsular</span></p>
+    </section>
+
+    <section class="seccion" aria-labelledby="barrio">
+      <p class="kicker">El barrio</p>
+      <h2 class="titulo" id="barrio">Tres cosas, y el mundo se queda.</h2>
+      <p class="seccion-texto">Una parcela, una pregunta y gente a la que puedes venderle lo que has hecho. El mapa no se borra el lunes.</p>
+      <div class="cartas">
+        <article class="carta">
+          <img src="img/barrio.jpg" alt="Casas de distintos colores separadas por caminos de tierra">
+          <div class="carta-cuerpo">
+            <p class="chip">Terreno</p>
+            <h3>Tu parcela</h3>
+            <p>La pala de oro marca las dos esquinas. Lo de dentro es tuyo. Si te cansas, se lo vendes a otro jugador, en duros, no en euros.</p>
+          </div>
+        </article>
+        <article class="carta">
+          <img src="img/sabado.jpg" alt="Jugadores de bloques sentados de noche delante de un tablón">
+          <div class="carta-cuerpo">
+            <p class="chip chip-oro">Sábado</p>
+            <h3>La pregunta</h3>
+            <p>La cita es el <span data-campo="cita">sábado 21:30, hora peninsular</span>. Una pregunta, un rato, y el premio es un título o un aspecto. Los duros no se regalan.</p>
+          </div>
+        </article>
+        <article class="carta">
+          <img src="img/mascota.jpg" alt="Personaje de bloques con una pala de oro y una insignia de pregunta">
+          <div class="carta-cuerpo">
+            <p class="chip chip-cielo">Barrio</p>
+            <h3>¿Y tú qué traes?</h3>
+            <p>Una casa rara, un huerto o una pregunta mejor. Minecraft Java <strong data-campo="version">26.1.2</strong>, cuenta de pago, sin Bedrock el día uno.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="porque">
+      <p class="kicker">Por qué Preguntones</p>
+      <h2 class="titulo" id="porque">Un servidor para quedarse, no para pagar el atajo.</h2>
+      <div class="motivos">
+        <article class="motivo">
+          <p class="sello" aria-hidden="true">01</p>
+          <h3>El mundo no se borra</h3>
+          <p>No hay reinicio del mapa al cambiar la semana. Lo que levantas sigue ahí mientras el servidor exista.</p>
+        </article>
+        <article class="motivo">
+          <p class="sello sello-oro" aria-hidden="true">02</p>
+          <h3>Duros, no euros</h3>
+          <p>La moneda del barrio sale de jugar y de venderle a otro jugador. El euro no fabrica duros, equipo ni terreno.</p>
+        </article>
+        <article class="motivo">
+          <p class="sello sello-cielo" aria-hidden="true">03</p>
+          <h3>La tienda solo adorna</h3>
+          <p>Vecino, <strong><span data-campo="precioVecino">4,99 €</span> IVA incluido</strong>. Un aspecto suelto, <strong><span data-campo="precioAspecto">1,99 €</span> IVA incluido</strong>. Color, estela, tag y mensaje. Hoy esta web no cobra.</p>
+        </article>
+        <article class="motivo">
+          <p class="sello" aria-hidden="true">04</p>
+          <h3>Java, y ya</h3>
+          <p>Cliente <strong data-campo="version">26.1.2</strong>. Dirección <strong data-campo="hostname">play.preguntones.es</strong>. Sin puerto: el DNS lleva la pista.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cierre" aria-labelledby="listo">
+      <p class="kicker">Multijugador</p>
+      <h2 class="titulo" id="listo">¿Listo para preguntar?</h2>
+      <p class="entradilla">Abre Minecraft Java, copia la dirección y entra al barrio. Jugar no pasa por la tienda. <a href="entrar.html">¿Primera vez? Cómo entrar, paso a paso.</a></p>
+      <div class="portada-acciones">
+        <button class="ip-capsula" type="button" data-copiar-ip>
+          <span class="ip-icono" aria-hidden="true"></span>
+          <span data-campo="hostname">play.preguntones.es</span>
+          <span class="ip-accion">Copiar IP</span>
+        </button>
+        <p class="copiado" hidden>Copiado. Pégalo en Multijugador.</p>
+        <a class="boton boton-discord" href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href"><span class="icono-discord" aria-hidden="true"></span> Unirse al Discord</a>
+        <a class="boton boton-tienda" href="tienda.html">Ver la tienda</a>
+      </div>
+    </section>
+
+    <section class="aviso-oficial" aria-labelledby="no-oficial">
+      <h2 id="no-oficial" class="frase-oficial"><span data-campo="nombre">Preguntones</span> no es un producto oficial de Minecraft y no está aprobado por Mojang ni por Microsoft.</h2>
+      <p>Minecraft es una marca de Mojang y de Microsoft. Este servidor es independiente: no está patrocinado ni asociado con ellos.</p>
+    </section>
+  </main>
+  <footer class="pie">
+    <div class="envoltorio">
+      <p class="pie-nombre"><span data-campo="nombre">Preguntones</span></p>
+      <p><span data-campo="nombre">Preguntones</span> no es un producto oficial de Minecraft y no está aprobado por Mojang ni por Microsoft.</p>
+      <nav aria-label="Pie">
+        <ul class="pie-enlaces">
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="entrar.html">Entrar</a></li>
+          <li><a href="normas.html">Normas</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="aviso-legal.html">Aviso legal</a></li>
+          <li><a href="privacidad.html">Privacidad</a></li>
+          <li><a href="condiciones.html">Condiciones de compra</a></li>
+          <li><a href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href">Discord</a></li>
+        </ul>
+      </nav>
+      <p>Servidor <strong data-campo="hostname">play.preguntones.es</strong> · Java <strong data-campo="version">26.1.2</strong> · Cita <span data-campo="cita">sábado 21:30, hora peninsular</span>.</p>
+    </div>
+  </footer>
+  <script src="js/identidad.js"></script>
+  <script src="js/sitio.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar · Preguntones</title>
+  <meta name="description" content="Cómo entrar en Preguntones con Minecraft Java 26.1.2. Añade el servidor play.preguntones.es, sin puerto. Bedrock no está abierto el día uno.">
+  <meta name="theme-color" content="#07140e">
+  <link rel="icon" href="img/marca.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+    <div class="envoltorio barra">
+      <a class="marca" href="index.html"><span data-campo="nombre">Preguntones</span></a>
+      <button class="menu-abrir" type="button" aria-expanded="false" aria-controls="menu-principal"><span class="cuando-cerrado">Menú</span><span class="cuando-abierto">Cerrar</span></button>
+      <nav class="menu" id="menu-principal" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="entrar.html" aria-current="page">Entrar</a>
+        <a href="normas.html">Normas</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href">Discord</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido" class="envoltorio medio" tabindex="-1">
+    <p class="kicker">Minecraft Java</p>
+    <h1>Entrar en <span data-campo="nombre">Preguntones</span></h1>
+    <p class="entradilla">Cuenta de pago, cliente <span data-campo="version">26.1.2</span> y la dirección <span data-campo="hostname">play.preguntones.es</span>. Sin puerto.</p>
+
+    <section class="tira" aria-label="Dirección para copiar">
+      <div>
+        <p class="kicker">Dirección del servidor</p>
+        <p class="ip" data-campo="hostname">play.preguntones.es</p>
+        <button class="boton boton-chico" type="button" data-copiar-ip>Copiar IP</button>
+        <p class="copiado" hidden>Copiado. Pégalo en Multijugador.</p>
+      </div>
+      <div>
+        <p class="kicker">Versión exacta</p>
+        <p class="ip" data-campo="version">26.1.2</p>
+      </div>
+      <div>
+        <p class="kicker">Puerto</p>
+        <p class="ip">Ninguno</p>
+      </div>
+    </section>
+
+    <div class="pila">
+      <article class="hoja">
+        <h2>Qué tienes que tener</h2>
+        <ul>
+          <li>Minecraft Java con una cuenta de pago. Si no has comprado el juego, el servidor te rechaza.</li>
+          <li>El cliente en la versión <strong data-campo="version">26.1.2</strong>. Tiene que ser esa, exacta.</li>
+          <li>Sesión iniciada en esa cuenta, en el lanzador oficial, para poder elegir la versión antes de pulsar Jugar.</li>
+        </ul>
+      </article>
+
+      <article class="hoja">
+        <h2>Añadir el servidor</h2>
+        <ol class="pasos">
+          <li>Abre Minecraft Java en la versión <span data-campo="version">26.1.2</span>.</li>
+          <li>Entra en Multijugador.</li>
+          <li>Pulsa Añadir servidor.</li>
+          <li>En el nombre del servidor escribe <span data-campo="nombre">Preguntones</span>. Ese nombre es solo para tu lista.</li>
+          <li>En la dirección del servidor escribe <strong data-campo="hostname">play.preguntones.es</strong>.</li>
+          <li>No añadas puerto. Ni dos puntos, ni un número al final de la dirección.</li>
+          <li>Guarda y entra.</li>
+        </ol>
+        <p>Si tu juego está en inglés, los botones se llaman Multiplayer y Add Server. La dirección es la misma.</p>
+        <p>No hace falta el puerto porque el DNS de <span data-campo="hostname">play.preguntones.es</span> llevará un registro SRV. Ese registro le dice al juego a qué puerto conectarse. Si pegas un puerto a mano, te saltas esa pista y puedes no entrar.</p>
+      </article>
+
+      <article class="hoja">
+        <h2>La primera sesión</h2>
+        <ul>
+          <li>Apareces en el spawn, la plaza de entrada del barrio.</li>
+          <li>Recibes una pala de oro de GriefPrevention. Con ella marcas las dos esquinas del terreno que reclamas. Lo de dentro queda protegido.</li>
+          <li>Recibes unos duros de entrada, para poder empezar a tratar con el barrio. Los duros se consiguen jugando. No están a la venta.</li>
+        </ul>
+        <p>La pala y los duros de entrada te los da el servidor. No se compran en la <a href="tienda.html">tienda</a>.</p>
+      </article>
+
+      <article class="hoja">
+        <h2>Bedrock no está abierto el día uno</h2>
+        <p>El día de la apertura no hay entrada por Bedrock. Ni consola, ni móvil, ni la edición Bedrock de Windows. Solo Minecraft Java, en la versión <strong data-campo="version">26.1.2</strong>, con cuenta de pago.</p>
+        <p>Si más adelante se abre Bedrock, se dirá en esta página y en el <a href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href">Discord</a>. Hoy no.</p>
+      </article>
+
+      <article class="hoja">
+        <h2>Si no conecta</h2>
+        <ul>
+          <li>Comprueba que el cliente es exactamente la <span data-campo="version">26.1.2</span>.</li>
+          <li>Borra cualquier puerto que hayas pegado detrás de <span data-campo="hostname">play.preguntones.es</span>.</li>
+          <li>Mira que la cuenta sea de pago y que hayas iniciado sesión en ella.</li>
+        </ul>
+        <p>Si sigue igual, pregúntalo en el Discord <a class="enlace-largo" href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="enlace">https://discord.gg/ZjcnvSkqsQ</a>, canal soporte. Antes de construir, lee las <a href="normas.html">normas</a>.</p>
+      </article>
+    </div>
+  </main>
+  <footer class="pie">
+    <div class="envoltorio">
+      <p class="pie-nombre"><span data-campo="nombre">Preguntones</span></p>
+      <p><span data-campo="nombre">Preguntones</span> no es un producto oficial de Minecraft y no está aprobado por Mojang ni por Microsoft.</p>
+      <nav aria-label="Pie">
+        <ul class="pie-enlaces">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="entrar.html" aria-current="page">Entrar</a></li>
+          <li><a href="normas.html">Normas</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="aviso-legal.html">Aviso legal</a></li>
+          <li><a href="privacidad.html">Privacidad</a></li>
+          <li><a href="condiciones.html">Condiciones de compra</a></li>
+          <li><a href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href">Discord</a></li>
+        </ul>
+      </nav>
+      <p>Servidor <strong data-campo="hostname">play.preguntones.es</strong> · Java <strong data-campo="version">26.1.2</strong> · Cita <span data-campo="cita">sábado 21:30, hora peninsular</span>.</p>
+    </div>
+  </footer>
+  <script src="js/identidad.js"></script>
+  <script src="js/sitio.js"></script>
+</body>
+</html>

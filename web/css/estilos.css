@@ -542,13 +542,62 @@ main.envoltorio {
 
 .carta img,
 .galeria img,
-.retrato {
+.retrato,
+.oferta img,
+.producto img {
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
   display: block;
   border: 0;
   margin: 0;
+}
+
+.oferta {
+  display: grid;
+  margin-top: 1.3rem;
+  overflow: hidden;
+  background: var(--panel);
+  border: 1px solid var(--linea);
+  border-radius: 28px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+}
+
+.oferta img {
+  aspect-ratio: 16 / 10;
+  min-height: 220px;
+}
+
+.oferta h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.oferta-cuerpo {
+  padding: 1.15rem 1.2rem 1.35rem;
+}
+
+.oferta ul {
+  margin: 0.85rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.oferta li + li {
+  margin-top: 0.35rem;
+}
+
+.producto {
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.producto img {
+  aspect-ratio: 1 / 1;
+}
+
+.producto .carta-cuerpo {
+  flex: 1;
 }
 
 .carta-cuerpo,
@@ -833,6 +882,16 @@ main.envoltorio {
 
   .productos {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .oferta {
+    grid-template-columns: 1.15fr 0.85fr;
+  }
+
+  .oferta img {
+    aspect-ratio: auto;
+    height: 100%;
+    min-height: 100%;
   }
 }
 

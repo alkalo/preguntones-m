@@ -29,14 +29,19 @@
 
   var tienda = typeof datos.tiendaUrl === "string" ? datos.tiendaUrl.trim() : "";
   var hayTienda = /^https:\/\//.test(tienda);
+  function marcar(nodo, oculto) {
+    if (nodo) nodo.hidden = oculto;
+  }
   ["texto-sin-cobro", "sin-cobro"].forEach(function (id) {
-    var nodo = document.getElementById(id);
-    if (nodo) nodo.hidden = hayTienda;
+    marcar(document.getElementById(id), hayTienda);
   });
   ["texto-con-cobro", "con-cobro"].forEach(function (id) {
-    var nodo = document.getElementById(id);
-    if (nodo) nodo.hidden = !hayTienda;
+    marcar(document.getElementById(id), !hayTienda);
   });
+  var sinCobro = document.querySelectorAll(".solo-sin-cobro");
+  for (var s = 0; s < sinCobro.length; s++) marcar(sinCobro[s], hayTienda);
+  var conCobro = document.querySelectorAll(".solo-con-cobro");
+  for (var t = 0; t < conCobro.length; t++) marcar(conCobro[t], !hayTienda);
 
   var menuNav = document.getElementById("menu-principal");
   var abrirMenu = document.querySelector(".menu-abrir");

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tienda · Preguntones</title>
-  <meta name="description" content="Tienda de adornos de Preguntones. Jugar es gratis. Paquete Vecino: 4,99 € con IVA, un solo pago. Un adorno suelto: 1,99 € con IVA. Hoy esta página no cobra.">
+  <meta name="description" content="Tienda de adornos de Preguntones. Jugar es gratis. El paquete Vecino cuesta 4,99 € con IVA, un solo pago. No se vende un adorno suelto.">
   <meta name="theme-color" content="#07140e">
   <link rel="icon" href="img/marca.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,46 +30,70 @@
   <main id="contenido" class="envoltorio" tabindex="-1">
     <p class="kicker">Solo adornos</p>
     <h1>Tienda de <span data-campo="nombre">Preguntones</span></h1>
-    <p class="entradilla">Jugar es gratis. Aquí solo se anuncian adornos: cambian cómo te ves, no cómo juegas. El precio que lees es el total, en euros, con el IVA incluido. No se suma nada después.</p>
-    <p><img class="retrato" src="img/cofre.jpg" alt="Cofre de roble con una etiqueta, una gorra y un frasco de chispas"></p>
+    <p class="entradilla">Jugar es gratis. Se vende un solo paquete de adornos: cambia cómo te ves, no cómo juegas. El precio que lees es el total, en euros, con el IVA incluido. No se suma nada después.</p>
 
     <p class="aviso-oficial frase-oficial"><span data-campo="nombre">Preguntones</span> no es un producto oficial de Minecraft y no está aprobado por Mojang ni por Microsoft.</p>
 
-    <p>Hay dos precios. El paquete Vecino cuesta <strong><span data-campo="precioVecino">4,99 €</span> con IVA</strong>, un solo pago. Un adorno suelto de ejemplo cuesta <strong><span data-campo="precioAspecto">1,99 €</span> con IVA</strong>, un solo pago. Ninguno de los dos lleva un impuesto aparte.</p>
-
-    <div class="productos">
-      <article class="hoja">
-        <p class="kicker">Paquete de adornos</p>
+    <article class="oferta">
+      <img src="img/producto-vecino.jpg" alt="Personaje de bloques con gorra verde, junto a un cofre con un casco, un pergamino, una poción y una chispa">
+      <div class="oferta-cuerpo">
+        <p class="kicker">Un solo paquete</p>
         <h2>Vecino</h2>
         <p class="precio"><span data-campo="precioVecino">4,99 €</span></p>
-        <p class="precio-nota">IVA incluido. Se paga una vez. No es una cuota.</p>
-        <h3>Qué incluye</h3>
+        <p class="precio-nota">IVA incluido. Se paga una vez. No es una cuota. Dura mientras el servidor exista.</p>
+        <p>Lleva la etiqueta <strong>Vecino</strong> en verde oscuro, el nombre de ese color y la frase «entra al barrio» al entrar. No da fuerza, vida, duros, terreno ni ventaja en la XO del sábado.</p>
         <ul>
-          <li>Color del nombre: tu nombre en el juego se ve de un color.</li>
-          <li>Rastro: unas partículas que te siguen al caminar.</li>
-          <li>Etiqueta: una palabra corta al lado del nombre.</li>
-          <li>Mensaje de entrada: una frase en el chat cuando entras al servidor.</li>
+          <li>Etiqueta verde delante del nombre, en el chat.</li>
+          <li>El nombre en ese mismo verde.</li>
+          <li>La frase «entra al barrio» cuando entras.</li>
+          <li>El rastro queda guardado. Hoy no se pinta en el juego y no da vuelo.</li>
         </ul>
-        <p>Los cuatro van juntos. Se ven. No dan fuerza, vida, duros ni terreno. El color, el texto de la etiqueta y la frase se concretan al entregarlo, y eso no cambia el precio.</p>
-        <p>El adorno dura mientras el servidor exista. Los duros son la moneda del barrio y no entran en este paquete.</p>
-      </article>
+        <div class="hero-acciones">
+          <a class="boton solo-con-cobro" hidden href="" data-campo="tiendaUrl" data-campo-modo="solo-href">Comprar Vecino</a>
+        </div>
+        <p class="placa solo-sin-cobro" id="sin-cobro">Hoy no hay botón de pago. Esta página no cobra y no te manda a ningún sitio para pagar.</p>
+      </div>
+    </article>
 
-      <article class="hoja">
-        <p class="kicker">De ejemplo</p>
-        <h2>Un adorno suelto</h2>
-        <p class="precio"><span data-campo="precioAspecto">1,99 €</span></p>
-        <p class="precio-nota">IVA incluido. Un solo pago por cada adorno.</p>
-        <h3>Qué incluye</h3>
-        <p>Un solo adorno, uno de estos:</p>
-        <ul>
-          <li>Color del nombre.</li>
-          <li>Rastro al caminar.</li>
-          <li>Etiqueta junto al nombre.</li>
-          <li>Frase cuando entras.</li>
-        </ul>
-        <p><span data-campo="precioAspecto">1,99 €</span> es el total de uno, no el de los cuatro. Los cuatro juntos son el paquete Vecino, a <span data-campo="precioVecino">4,99 €</span>. También dura mientras el servidor exista, y tampoco cambia cómo juegas.</p>
-      </article>
-    </div>
+    <section class="seccion" aria-labelledby="adornos">
+      <p class="kicker">Dentro de Vecino</p>
+      <h2 class="titulo" id="adornos">Los cuatro van juntos.</h2>
+      <p class="seccion-texto">No se vende un adorno suelto. <span data-campo="precioVecino">4,99 €</span> es el total del paquete, no el precio de una pieza.</p>
+      <div class="productos">
+        <article class="producto">
+          <img src="img/producto-etiqueta.jpg" alt="Personaje de bloques con gorra verde y una esmeralda en el pecho">
+          <div class="carta-cuerpo">
+            <p class="chip">Etiqueta</p>
+            <h3>Vecino, en verde</h3>
+            <p>Delante del nombre, en el chat, se lee Vecino en verde oscuro. Es una palabra. No da objetos ni permisos.</p>
+          </div>
+        </article>
+        <article class="producto">
+          <img src="img/producto-color.jpg" alt="Personaje de bloques con un resplandor verde alrededor de la cabeza">
+          <div class="carta-cuerpo">
+            <p class="chip chip-cielo">Color</p>
+            <h3>El nombre en verde</h3>
+            <p>El nombre coge el verde de la etiqueta. No cambia el chat de los demás ni el color de quien no compra.</p>
+          </div>
+        </article>
+        <article class="producto">
+          <img src="img/producto-entrada.jpg" alt="Personaje de bloques cruzando un arco de madera, junto a un tablón en blanco">
+          <div class="carta-cuerpo">
+            <p class="chip chip-oro">Entrada</p>
+            <h3>Entra al barrio</h3>
+            <p>Al entrar, el aviso lleva la frase «entra al barrio». No anuncia nada en Discord y no es un título de poder.</p>
+          </div>
+        </article>
+        <article class="producto">
+          <img src="img/producto-estela.jpg" alt="Personaje de bloques caminando por un camino, con chispas verdes y doradas detrás">
+          <div class="carta-cuerpo">
+            <p class="chip">Rastro</p>
+            <h3>Chispas al caminar</h3>
+            <p>El dibujo enseña el rastro. El paquete lo guarda, pero hoy no se pinta en el juego. No da vuelo ni velocidad.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
     <article class="hoja">
       <h2>Qué no se vende</h2>
@@ -88,13 +112,11 @@
     </article>
 
     <article class="hoja" id="pago">
-      <h2>Cómo se pagará</h2>
-      <p id="texto-sin-cobro">Cuando se pueda pagar, el cobro será en Tebex, una tienda externa. En esa página verás otra vez el precio total, con el IVA incluido, antes de confirmar. El botón de esta web solo te llevará allí.</p>
-      <p class="placa" id="sin-cobro">Hoy no hay botón de pago. Esta página no cobra y no te manda a ningún sitio para pagar.</p>
-      <p id="texto-con-cobro" hidden>El pago se hace en Tebex, la tienda externa, no en esta página. El enlace abre esa tienda: allí ves otra vez el total, con el IVA incluido, antes de confirmar.</p>
-      <div class="hero-acciones" id="con-cobro" hidden>
-        <a class="boton" href="" data-campo="tiendaUrl" data-campo-modo="solo-href">Comprar el paquete Vecino</a>
-        <a class="boton boton-linea" href="" data-campo="tiendaUrl" data-campo-modo="solo-href">Comprar un adorno suelto</a>
+      <h2>Cómo se paga</h2>
+      <p id="texto-sin-cobro" class="solo-sin-cobro">Cuando se pueda pagar, el cobro será en Tebex, una tienda externa. En esa página verás otra vez el precio total, con el IVA incluido, antes de confirmar. El botón de esta web solo te llevará allí.</p>
+      <p id="texto-con-cobro" class="solo-con-cobro" hidden>El pago se hace en Tebex, la tienda externa, no en esta página. El enlace abre esa tienda: allí ves otra vez el total, con el IVA incluido, antes de confirmar.</p>
+      <div class="hero-acciones solo-con-cobro" id="con-cobro" hidden>
+        <a class="boton" href="" data-campo="tiendaUrl" data-campo-modo="solo-href">Comprar Vecino</a>
       </div>
       <p>El aviso de la compra, la entrega y la devolución se hacen en el Discord, canal soporte.</p>
       <p>Tienes 14 días para echarte atrás y pedir el dinero de vuelta. En un adorno digital, ese derecho solo se pierde si pides que te lo activemos ya y te lo confirmamos por escrito. El detalle está en las <a href="condiciones.html">condiciones de compra</a>. Los datos, en <a href="privacidad.html">privacidad</a>.</p>

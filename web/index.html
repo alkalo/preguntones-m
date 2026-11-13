@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Preguntones: un servidor de Minecraft</title>
-  <meta name="description" content="Servidor de Minecraft Java 26.1.2. Marcas un terreno, construyes con más gente y el sábado a las 21:30 (hora de Madrid) se juega la XO. Dirección: play.preguntones.es. Jugar es gratis.">
+  <meta name="description" content="Servidor de Minecraft Java 26.1.2. Una parcela, un cofre para vender y el sábado a las 21:30 (hora de Madrid) la XO. Dirección: play.preguntones.es. Jugar es gratis.">
   <meta name="theme-color" content="#07140e">
   <link rel="icon" href="img/marca.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,7 @@
       </div>
       <p class="estado"><span class="punto" aria-hidden="true"></span> Minecraft Java · <span data-campo="version">26.1.2</span> · jugar es gratis</p>
       <h1 id="titulo">¿Estás<br><span class="brillo">preguntón?</span></h1>
-      <p class="entradilla">Preguntones es un servidor de Minecraft Java: un barrio en supervivencia. Marcas un terreno, construyes con más gente y puedes vender lo que haces. El <span data-campo="cita">sábado a las 21:30, hora de Madrid</span>, se juega la XO. Jugar es gratis.</p>
+      <p class="entradilla">Preguntones es un servidor de Minecraft Java: un barrio en supervivencia. Marcas un terreno, construyes con más gente y vendes lo que haces desde tu parcela. El <span data-campo="cita">sábado a las 21:30, hora de Madrid</span>, se juega la XO. Jugar es gratis.</p>
       <div class="portada-acciones">
         <button class="ip-capsula" id="copiar-ip" type="button" data-copiar-ip>
           <span class="ip-icono" aria-hidden="true"></span>
@@ -61,7 +61,7 @@
           <div class="carta-cuerpo">
             <p class="chip">Terreno</p>
             <h3>Tu parcela</h3>
-            <p>Al entrar te dan una pala de oro. Clic derecho en un bloque de una parcela libre: si puedes pagarla, la parcela entera es tuya y nadie más la rompe. El borde amarillo marca el tamaño. Entre medias hay un camino para llegar a cada casa. Si compras los dos lados, ese tramo es tuyo y puedes quitarlo para hacer la casa más grande. Se paga en duros, la moneda del barrio.</p>
+            <p>Al entrar te dan una pala de oro. Clic derecho en un bloque de una parcela libre: si puedes pagarla, la parcela entera es tuya. El borde amarillo marca el tamaño. La puerta se abre; cofres y hornos, no. Con <strong>/parcela amigo</strong> invitas a quien esté conectado para que construya contigo. El camino entre dos casas es de todos hasta que los dos lados son tuyos.</p>
           </div>
         </article>
         <article class="carta">
@@ -69,7 +69,7 @@
           <div class="carta-cuerpo">
             <p class="chip chip-oro">Sábado</p>
             <h3>La XO</h3>
-            <p>El <span data-campo="cita">sábado a las 21:30, hora de Madrid</span>. En Canarias, a las 20:30. Si está abierta, el arco rojo y verde del norte te lleva. X es falso y O es verdadero. Tienes unos segundos para colocarte en la letra. Quien falla deja de jugar y se queda mirando. El último en pie recibe una campana. No da duros.</p>
+            <p>El <span data-campo="cita">sábado a las 21:30, hora de Madrid</span>, hasta las 22:30. En Canarias, una hora menos. Si está abierta, se entra desde el Panel Preguntones: Escape y el botón dorado de abajo. X es falso y O es verdadero. Tienes 15 segundos para leerla y colocarte. Se te ve, y los golpes no cuentan. 4 duros por persona: se los lleva quien gana la ronda.</p>
           </div>
         </article>
         <article class="carta">
@@ -83,6 +83,44 @@
       </div>
     </section>
 
+    <section class="seccion" aria-labelledby="comprar">
+      <p class="kicker">Comprar y vender</p>
+      <h2 class="titulo" id="comprar">Los duros se mueven en el barrio.</h2>
+      <p class="seccion-texto">Con euros no se compra terreno ni moneda. Lo que se vende dentro se paga en duros. El detalle de cada sitio está en la <a href="tienda.html">tienda</a>.</p>
+      <div class="fichas">
+        <article class="ficha">
+          <p class="chip chip-oro">Puesto</p>
+          <h3>Bloques para la casa</h3>
+          <p>En el panel, botón Tienda, o con <strong>/puesto</strong>. Luces, madera, piedra, cristal, muebles y mecanismos. Es el atajo caro: talar sigue saliendo mejor. 32 troncos de roble cuestan 96 duros; sus tablones, 24.</p>
+        </article>
+        <article class="ficha">
+          <p class="chip">Cofre</p>
+          <h3>Vendes lo tuyo</h3>
+          <p>Arriba: oro, cofre, oro. Abajo: oro, cartel, oro. Vale cualquier cartel que no sea colgante. Solo en tu parcela, hasta cuatro. Tú pones el precio por unidad. Quien compra elige la cantidad. El barrio se queda el 10 %.</p>
+        </article>
+        <article class="ficha">
+          <p class="chip chip-oro">Banco</p>
+          <h3>Pedir prestado</h3>
+          <p>Botón Banco del panel, o <strong>/banco</strong>. Presta lo que haya en la caja del barrio. 1 día al 10 %, 3 días al 20 %, 7 días al 30 %. Hasta 50 duros, si no pagas, te los cobra del saldo. Más de 50, dejas una parcela de aval.</p>
+        </article>
+        <article class="ficha">
+          <p class="chip chip-cielo">Viaje</p>
+          <h3>La bandera</h3>
+          <p>40 duros, en el panel. La pones donde construyas y aparece en Spawn. Hasta cinco. En el barrio se queda. En el survival, el Nether o el End se va cuando ese mundo se borra.</p>
+        </article>
+        <article class="ficha">
+          <p class="chip">Gente</p>
+          <h3>El clan</h3>
+          <p>Hasta 8 personas, con <strong>/clan crear</strong>. No da más parcelas: sigues con seis. La voz del clan es opcional. Se juega igual sin Discord.</p>
+        </article>
+        <article class="ficha">
+          <p class="chip chip-oro">Pelea</p>
+          <h3>El PVP</h3>
+          <p>Los tres primeros días no puedes golpear a otro jugador. Luego, en el panel, activas el modo agresivo. El duelo se reta ahí: tarda 15 segundos, no toca el karma ni los objetos, y en la XO no hay. Junto al nombre se lee Bueno, Normal, Malo o Cruel.</p>
+        </article>
+      </div>
+    </section>
+
     <section class="seccion" aria-labelledby="porque">
       <p class="kicker">Por qué Preguntones</p>
       <h2 class="titulo" id="porque">Un sitio para quedarse.</h2>
@@ -90,7 +128,7 @@
         <article class="motivo">
           <p class="sello" aria-hidden="true">01</p>
           <h3>Tu casa se queda</h3>
-          <p>El barrio se queda. A las 05:00, hora de Madrid, el servidor se reinicia un momento y no borra las parcelas. El survival es otro mundo: se entra solo por el botón del arco dorado, al este, y se borra cuando un grupo mata al dragón. La brújula elige volver a la plaza o ir junto a un jugador.</p>
+          <p>El barrio se queda. A las 05:00, hora de Madrid, el servidor se reinicia un momento y no borra las parcelas. El survival es otro mundo y se borra 48 horas después de que un grupo mate al dragón. El primer ciclo abre el End el día 14, con 12 blazes de ese ciclo. El segundo pide también un bastión y una ciudad ancestral. Desde el tercero se turnan: la ciudad, y al siguiente el bastión. En la pelea no valen las explosiones ni los élitros. Hasta cuatro. Quien esté conectado se lleva 20 duros y el rango Cazador.</p>
         </article>
         <article class="motivo">
           <p class="sello sello-oro" aria-hidden="true">02</p>
@@ -99,8 +137,8 @@
         </article>
         <article class="motivo">
           <p class="sello sello-cielo" aria-hidden="true">03</p>
-          <h3>La tienda solo adorna</h3>
-          <p>El paquete Vecino cuesta <strong><span data-campo="precioVecino">4,99 €</span> con IVA</strong>. Un adorno suelto no está a la venta. El cobro, cuando esté abierto, será en Tebex y no en esta página.</p>
+          <h3>Dos tiendas distintas</h3>
+          <p>Dentro, el puesto, el cofre y la bandera se pagan con duros. En esta web, el paquete VIP cuesta <strong><span data-campo="precioVecino">4,99 €</span> con IVA</strong> y solo cambia cómo te ves. Hoy esa página no cobra.</p>
         </article>
         <article class="motivo">
           <p class="sello" aria-hidden="true">04</p>
@@ -119,15 +157,31 @@
           <dl class="datos">
             <div>
               <dt>Duros</dt>
-              <dd>La moneda del barrio. Entras con 25. La primera parcela cuesta 40 y cada una siguiente, más. También salen de las misiones del survival y de venderle a otro jugador. Un euro no los fabrica, y no valen fuera de este servidor.</dd>
+              <dd>La moneda del barrio. Entras con 25 y el tope es 2000. La primera parcela cuesta 25. Luego 55, 95, 145, 205 y 275. Hasta seis. También salen de las misiones del survival —<strong>/ciclo</strong> enseña el avance— y de venderle a otro jugador. Un euro no los fabrica, y no valen fuera de este servidor.</dd>
             </div>
             <div>
               <dt>Terreno</dt>
-              <dd>Una parcela del barrio, igual que las demás. La pala de oro sobre un bloque libre la compra entera, si tienes duros. Puedes tener hasta seis. El camino entre dos se queda de todos hasta que los dos lados son tuyos.</dd>
+              <dd>Una parcela del barrio, igual que las demás. La pala de oro sobre un bloque libre la compra entera, si tienes duros. Puedes tener hasta seis, también dentro de un clan. El camino entre dos se queda de todos hasta que los dos lados son tuyos. La puerta se abre. Cofres, hornos y el resto, no.</dd>
+            </div>
+            <div>
+              <dt>Panel</dt>
+              <dd>Escape, el botón dorado de abajo, o <strong>/menu</strong>. Ahí están Spawn, ir junto a un jugador, el survival, la XO, el PVP, la tienda de bloques, la bandera y el banco. Volver tarda 15 segundos y se cancela en lava, si te ahogas o si te atacan.</dd>
             </div>
             <div>
               <dt>La XO</dt>
-              <dd>La cita del <span data-campo="cita">sábado a las 21:30, hora de Madrid</span> (en Canarias, una hora menos). El arco rojo y verde del norte te lleva si está abierta. X es falso y O es verdadero. Quien se equivoca deja de jugar y mira. El último en pie recibe una campana. No da duros.</dd>
+              <dd>La cita del <span data-campo="cita">sábado a las 21:30, hora de Madrid</span>, hasta las 22:30 (en Canarias, una hora menos). Si está abierta, se entra desde el Panel Preguntones. X es falso y O es verdadero. 15 segundos para colocarte. Hacen falta dos. 4 duros por persona: se los lleva quien gana la ronda.</dd>
+            </div>
+            <div>
+              <dt>Cofre de venta</dt>
+              <dd>Un bloque de tu parcela. Metes género, le pones un precio por unidad y quien pase compra la cantidad. El barrio se queda el 10 %. Sin el pack de recursos se ve un barril con el rótulo «Venta» y se compra igual.</dd>
+            </div>
+            <div>
+              <dt>Banco</dt>
+              <dd>Préstamo de la caja del barrio, desde el panel. El interés se acepta antes: 10 %, 20 % o 30 % según el plazo. No se fabrica moneda: si la caja está vacía, no hay préstamo.</dd>
+            </div>
+            <div>
+              <dt>El End</dt>
+              <dd>El primer ciclo abre el día 14, con 12 blazes de ese ciclo. El segundo pide también un bastión y una ciudad ancestral. Desde el tercero se turnan: la ciudad, y al siguiente el bastión. En la pelea no valen las explosiones ni los élitros. Hasta cuatro, con /grupo. Quien esté conectado se lleva 20 duros y el rango Cazador. 48 horas después, ese mundo se borra. El barrio no.</dd>
             </div>
             <div>
               <dt>Título</dt>

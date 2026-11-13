@@ -503,7 +503,9 @@ main.envoltorio {
 .motivos,
 .rejilla,
 .galeria,
-.productos {
+.productos,
+.fichas,
+.caminos {
   display: grid;
   gap: 0.9rem;
   margin-top: 1.2rem;
@@ -522,6 +524,8 @@ main.envoltorio {
 
 .carta,
 .motivo,
+.ficha,
+.camino,
 .hoja,
 .aviso-oficial,
 .galeria article,
@@ -533,6 +537,42 @@ main.envoltorio {
   border: 1px solid var(--linea);
   border-radius: 22px;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+}
+
+.ficha,
+.camino {
+  margin: 0;
+  padding: 1.05rem 1.1rem 1.2rem;
+}
+
+.camino {
+  display: flex;
+  flex-direction: column;
+}
+
+.camino p:last-child {
+  margin-top: auto;
+  padding-top: 0.85rem;
+}
+
+.ficha h3,
+.camino h2 {
+  margin-top: 0.15rem;
+}
+
+.camino-oro {
+  border-color: rgba(246, 196, 69, 0.45);
+  background:
+    linear-gradient(180deg, rgba(246, 196, 69, 0.1), transparent 42%),
+    var(--panel);
+}
+
+.ancla {
+  scroll-margin-top: 5.5rem;
+}
+
+.seccion > .hoja {
+  margin-top: 0.9rem;
 }
 
 .carta {
@@ -629,6 +669,8 @@ main.envoltorio {
 
 .carta p,
 .motivo p,
+.ficha p,
+.camino p,
 .hoja p,
 .galeria p {
   color: #c5d9cc;
@@ -876,7 +918,9 @@ main.envoltorio {
   }
 
   .motivos,
-  .rejilla {
+  .rejilla,
+  .fichas,
+  .caminos {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -897,8 +941,13 @@ main.envoltorio {
 
 @media (min-width: 980px) {
   .cartas,
-  .galeria {
+  .galeria,
+  .fichas {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .fichas.pares {
+    grid-template-columns: 1fr 1fr;
   }
 
   .motivos {

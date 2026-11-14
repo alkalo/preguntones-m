@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:nether/summon_wither",
+  "criteria": {
+    "beacon": {
+      "conditions": {
+        "level": {
+          "min": 1
+        }
+      },
+      "trigger": "minecraft:construct_beacon"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.nether.create_beacon.description",
+      "extra": [
+        {
+          "text": " · 1 duro",
+          "color": "gold"
+        }
+      ]
+    },
+    "icon": {
+      "id": "minecraft:beacon"
+    },
+    "title": {
+      "translate": "advancements.nether.create_beacon.title"
+    }
+  },
+  "requirements": [
+    [
+      "beacon"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

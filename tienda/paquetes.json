@@ -1,0 +1,198 @@
+{
+  "tienda": "Preguntones",
+  "plataforma": "Tebex",
+  "plugin": "Oficial de Tebex para Paper. El plugin de la marca Buycraft está retirado.",
+  "juego": "Minecraft Java",
+  "modo_cuentas": "online",
+  "monedero": "EUR",
+  "motivo_monedero": "Retirar en una divisa distinta a la del monedero cuesta un 2 %. El monedero va en euros.",
+  "entrega": {
+    "jugador_online": true,
+    "opcion_del_panel": "Require the customer to be online",
+    "si_esta_desconectado": "El comando espera. No se entrega en cola offline.",
+    "como": "consola",
+    "barra_inicial": false,
+    "demora_habitual": "Tebex documenta que el comando corre al confirmarse el pago, a menudo en 1 a 3 minutos, y puede tardar algo más."
+  },
+  "placeholder": {
+    "usuario": "{username}",
+    "nota": "{username} es la variable universal de Tebex: el nombre usado al entrar o al comprar. En esta tienda, con Minecraft Java en modo online, es el nombre dentro del juego y es el que va en lp user. {transaction} es el identificador del pago, no el jugador. {name} sale en la misma documentación como variable antigua de Minecraft para el nombre; aquí se usa {username}. En un regalo, {purchaserName} es quien paga y el comando sigue usando {username}. Se prueba con un pago manual del panel, no con un cobro real."
+  },
+  "precios": {
+    "moneda": "EUR",
+    "iva_incluido": true,
+    "el_precio_que_ve_el_jugador_es_el_total": true,
+    "nota_comision": "Tebex descuenta un 5 % de comisión de plataforma al entrar en el monedero. La pasarela va aparte: el ejemplo que Tebex publica para PayPal es 2,49 % más 0,40 USD, y la tarifa real depende del método. Esas comisiones salen del monedero del servidor y no se suman al precio de la ficha. 4,99 EUR y 1,99 EUR son lo que paga el jugador, IVA incluido. El 15 % de Tebex es la tarifa de FiveM y aquí no aplica."
+  },
+  "staff_no_se_vende": true,
+  "comandos_globales": [],
+  "prohibidos": [
+    {"id": "kits", "motivo": "Equipo, comida o recursos que quien no paga no consigue igual."},
+    {"id": "duros", "motivo": "El euro no fabrica la moneda del servidor. Los duros salen de venderle a otro jugador."},
+    {"id": "vuelo", "motivo": "Volar en supervivencia cambia el terreno y el farmeo de quien no paga."},
+    {"id": "unbans", "motivo": "Levantar un ban a cambio de dinero devuelve a quien ya estorbó a los demás."},
+    {"id": "cajas", "motivo": "El premio aleatorio de pago no entra, tampoco si dentro solo hay aspecto."},
+    {"id": "cola", "motivo": "No hay cola de prioridad a la venta."},
+    {"id": "claims de pago", "motivo": "El terreno es el juego. Más claims por dinero cambian la partida."},
+    {"id": "boosters", "motivo": "No hay multiplicador personal de experiencia, de drop ni de duros."}
+  ],
+  "grupos_luckperms": {
+    "vecino": {
+      "se_crea_una_vez_en_consola": true,
+      "no_lo_lanza_tebex": true,
+      "peso": 10,
+      "permisos": [],
+      "comandos": [
+        "lp creategroup vecino",
+        "lp group vecino setweight 10",
+        "lp group vecino meta setprefix 10 \"&2[VIP] &2\"",
+        "lp group vecino meta set nombre_color &2",
+        "lp group vecino meta set estela ejemplo",
+        "lp group vecino meta set mensaje_entrada \"&7entra al barrio\""
+      ],
+      "nota": "El grupo interno sigue llamándose vecino para no romper el comando de Tebex ni a quien ya lo tiene. En el chat el prefijo es &2[VIP] &2: tag verde oscuro, y el nombre sigue de ese color hasta el reset del formato. El grupo solo lleva meta cosmética. parent add no quita el grupo default: no usar parent set. Si el tag sale dos veces, el formato de chat ya está pintando el prefijo por otro sitio. La meta puesta luego en el usuario, con un aspecto suelto, pisa la del grupo en esa clave en el caso habitual de LuckPerms: se prueba con un usuario de prueba."
+    }
+  },
+  "lectura_de_las_meta": {
+    "tag": "Lo enseña el prefijo de LuckPerms. EssentialsX Chat lo lee como {PREFIX} a través de Vault.",
+    "nombre_color": "%luckperms_meta_nombre_color%",
+    "estela": "%luckperms_meta_estela%",
+    "mensaje_entrada": "%luckperms_meta_mensaje_entrada%",
+    "nota": "El tag se ve al existir el grupo y usar el chat el prefijo. El color suelto y la frase de entrada se ven cuando el formato los incluye con esos placeholders de PlaceholderAPI. La estela no tiene plugin en el lanzamiento: la meta se guarda y no dibuja partículas."
+  },
+  "paquetes": [
+    {
+      "id": "vecino",
+      "nombre": "VIP",
+      "categoria": "Aspectos",
+      "ejemplo": false,
+      "precio_eur": "4.99",
+      "texto_precio": "4,99 EUR, IVA incluido",
+      "iva_incluido": true,
+      "pago": "unico",
+      "suscripcion": false,
+      "caduca": false,
+      "limite_por_jugador": 1,
+      "entrega_con_jugador_online": true,
+      "descripcion": "Pago único de 4,99 EUR, IVA incluido. Ese es el total. Pone el tag [VIP] delante del nombre, en verde oscuro, y el nombre coge ese color. El grupo también guarda una estela de ejemplo y la frase «entra al barrio». El tag se ve en el chat. La estela no se dibuja, porque no hay plugin de partículas, y no da vuelo. No da duros, kits, terreno, cola ni ventaja de juego. Se entrega por comando cuando estás conectado. No hace falta estar en Discord.",
+      "comandos_al_pagar": [
+        {
+          "comando": "lp user {username} parent add vecino",
+          "como": "consola",
+          "barra_inicial": false,
+          "jugador_online": true
+        }
+      ],
+      "comandos_al_reembolsar": [
+        {
+          "comando": "lp user {username} parent remove vecino",
+          "como": "consola",
+          "barra_inicial": false,
+          "jugador_online": true
+        }
+      ]
+    },
+    {
+      "id": "color_nombre",
+      "nombre": "Color de nombre",
+      "categoria": "Aspectos",
+      "ejemplo": true,
+      "precio_eur": "1.99",
+      "texto_precio": "1,99 EUR, IVA incluido",
+      "iva_incluido": true,
+      "pago": "unico",
+      "suscripcion": false,
+      "caduca": false,
+      "limite_por_jugador": 1,
+      "entrega_con_jugador_online": true,
+      "que_guarda": {"meta": "nombre_color", "valor": "&b", "color": "azul claro"},
+      "se_ve_en_el_lanzamiento": "Cuando el formato de chat incluye %luckperms_meta_nombre_color% delante del nombre.",
+      "poder": false,
+      "descripcion": "Pago único de 1,99 EUR, IVA incluido. Ese es el total. Guarda el color azul claro del nombre. No da permisos, no cambia el chat de los demás y no sustituye al tag VIP: es otra meta. Se ve si el formato de chat lee nombre_color. Se entrega cuando estás conectado.",
+      "comandos_al_pagar": [
+        {
+          "comando": "lp user {username} meta set nombre_color &b",
+          "como": "consola",
+          "barra_inicial": false,
+          "jugador_online": true
+        }
+      ],
+      "comandos_al_reembolsar": [
+        {
+          "comando": "lp user {username} meta unset nombre_color",
+          "como": "consola",
+          "barra_inicial": false,
+          "jugador_online": true
+        }
+      ]
+    },
+    {
+      "id": "estela",
+      "nombre": "Estela",
+      "categoria": "Aspectos",
+      "ejemplo": true,
+      "precio_eur": "1.99",
+      "texto_precio": "1,99 EUR, IVA incluido",
+      "iva_incluido": true,
+      "pago": "unico",
+      "suscripcion": false,
+      "caduca": false,
+      "limite_por_jugador": 1,
+      "entrega_con_jugador_online": true,
+      "que_guarda": {"meta": "estela", "valor": "ejemplo"},
+      "se_ve_en_el_lanzamiento": false,
+      "poder": false,
+      "descripcion": "Pago único de 1,99 EUR, IVA incluido. Ese es el total. Guarda la meta estela con el valor ejemplo. En el lanzamiento no hay plugin de partículas, así que no se dibuja una estela y no da vuelo ni velocidad. El comando solo escribe esa meta de LuckPerms. Se entrega cuando estás conectado.",
+      "comandos_al_pagar": [
+        {
+          "comando": "lp user {username} meta set estela ejemplo",
+          "como": "consola",
+          "barra_inicial": false,
+          "jugador_online": true
+        }
+      ],
+      "comandos_al_reembolsar": [
+        {
+          "comando": "lp user {username} meta unset estela",
+          "como": "consola",
+          "barra_inicial": false,
+          "jugador_online": true
+        }
+      ]
+    },
+    {
+      "id": "mensaje_entrada",
+      "nombre": "Mensaje de entrada",
+      "categoria": "Aspectos",
+      "ejemplo": true,
+      "precio_eur": "1.99",
+      "texto_precio": "1,99 EUR, IVA incluido",
+      "iva_incluido": true,
+      "pago": "unico",
+      "suscripcion": false,
+      "caduca": false,
+      "limite_por_jugador": 1,
+      "entrega_con_jugador_online": true,
+      "que_guarda": {"meta": "mensaje_entrada", "valor": "&7entra al barrio"},
+      "se_ve_en_el_lanzamiento": "Cuando el anuncio de unión incluye %luckperms_meta_mensaje_entrada%. Quien no lo compra sigue con el mensaje de siempre.",
+      "poder": false,
+      "descripcion": "Pago único de 1,99 EUR, IVA incluido. Ese es el total. Guarda la frase «entra al barrio» como mensaje de entrada. No anuncia nada en Discord y no da un título con poder. Se muestra si el mensaje de unión del servidor lee esa meta. Se entrega cuando estás conectado.",
+      "comandos_al_pagar": [
+        {
+          "comando": "lp user {username} meta set mensaje_entrada \"&7entra al barrio\"",
+          "como": "consola",
+          "barra_inicial": false,
+          "jugador_online": true
+        }
+      ],
+      "comandos_al_reembolsar": [
+        {
+          "comando": "lp user {username} meta unset mensaje_entrada",
+          "como": "consola",
+          "barra_inicial": false,
+          "jugador_online": true
+        }
+      ]
+    }
+  ]
+}

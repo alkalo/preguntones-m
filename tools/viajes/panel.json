@@ -1,0 +1,88 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Panel Preguntones",
+    "color": "white"
+  },
+  "external_title": {
+    "text": "Panel Preguntones",
+    "color": "gold",
+    "bold": false
+  },
+  "columns": 4,
+  "can_close_with_escape": true,
+  "pause": true,
+  "after_action": "close",
+  "actions": [
+    {
+      "label": { "text": "Spawn", "color": "green" },
+      "tooltip": "El barrio o una bandera tuya. Tarda 15 segundos, si no hay peligro.",
+      "width": 74,
+      "action": { "type": "run_command", "command": "menu spawn" }
+    },
+    {
+      "label": { "text": "Jugador", "color": "aqua" },
+      "tooltip": "Ir junto a alguien. Esa persona tiene que aceptar.",
+      "width": 74,
+      "action": { "type": "run_command", "command": "menu jugador" }
+    },
+    {
+      "label": { "text": "Survival", "color": "yellow" },
+      "tooltip": "Explorar un sitio al azar, o volver a tu cama.",
+      "width": 74,
+      "action": { "type": "run_command", "command": "menu survival" }
+    },
+    {
+      "label": { "text": "Muerte", "color": "#E08A8A" },
+      "tooltip": "Tu última muerte. Cuesta 80 duros. Una vez.",
+      "width": 74,
+      "action": { "type": "run_command", "command": "menu muerte" }
+    },
+    {
+      "label": { "text": "Eventos", "color": "#C9A0F0" },
+      "tooltip": "La XO y el bingo.",
+      "width": 74,
+      "action": { "type": "run_command", "command": "menu eventos" }
+    },
+    {
+      "label": { "text": "PVP", "color": "gold" },
+      "tooltip": "Modo agresivo y retar a un duelo.",
+      "width": 74,
+      "action": { "type": "run_command", "command": "karma" }
+    },
+    {
+      "label": { "text": "Parcelas", "color": "#8FCB6B" },
+      "tooltip": "Invitar, unir el camino con un amigo y venderle al banco.",
+      "width": 74,
+      "action": { "type": "run_command", "command": "menu parcelas" }
+    },
+    {
+      "label": { "text": "Tienda", "color": "white" },
+      "tooltip": "Bloques para la parcela. Se pagan con duros.",
+      "width": 74,
+      "action": { "type": "run_command", "command": "menu tienda" }
+    },
+    {
+      "label": { "text": "Bandera", "color": "gold" },
+      "tooltip": "Cuesta 40 duros. Al ponerla, sale en Spawn.",
+      "width": 74,
+      "action": { "type": "run_command", "command": "menu bandera" }
+    },
+    {
+      "label": { "text": "Banco", "color": "gold" },
+      "tooltip": "Pedir duros. Se devuelven con intereses.",
+      "width": 74,
+      "action": { "type": "run_command", "command": "menu banco" }
+    },
+    {
+      "label": { "text": "Grupo", "color": "#8FD0C8" },
+      "tooltip": "Hasta 4 personas. La cara y la vida se quedan arriba a la izquierda.",
+      "width": 74,
+      "action": { "type": "run_command", "command": "grupo" }
+    }
+  ],
+  "exit_action": {
+    "label": { "text": "Cerrar", "color": "gray" },
+    "width": 120
+  }
+}

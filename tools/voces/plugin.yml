@@ -1,0 +1,7 @@
+name: Voces
+main: com.preguntones.voces.VocesPlugin
+version: "1.0"
+api-version: "1.13"
+description: Salas de voz que se abren al entrar y salas de clan.
+depend: [DiscordSRV]
+softdepend: [Parcelas]

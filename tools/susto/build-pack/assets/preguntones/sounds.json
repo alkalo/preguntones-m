@@ -1,0 +1,7 @@
+{
+  "susto.grito": {
+    "sounds": [
+      { "name": "preguntones:susto/grito", "volume": 1.0, "pitch": 1.0 }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "textures": {
+    "0": "preguntones:item/susto_4",
+    "particle": "preguntones:item/susto_4"
+  },
+  "elements": [
+    {
+      "shade": false,
+      "from": [0, 0, 7.5],
+      "to": [16, 16, 8.5],
+      "faces": {
+        "south": { "uv": [0, 0, 16, 16], "texture": "#0" },
+        "north": { "uv": [0, 0, 16, 16], "texture": "#0" }
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+name: Viajes
+main: com.preguntones.viajes.ViajesPlugin
+bootstrapper: com.preguntones.viajes.PanelBootstrap
+version: "1.0"
+api-version: "1.21"
+description: Panel Preguntones. Spawn, banderas, un jugador, survival, la última muerte, parcelas y eventos.
+softdepend: [GriefPrevention, Essentials, EssentialsSpawn, Xo, Bingo, Parcelas, Vault]
+commands:
+  menu:
+    description: Abrir el Panel Preguntones
+    usage: /menu
+    permission: viaje.usar
+  volver:
+    description: Volver al spawn en 15 segundos, si no hay peligro
+    usage: /volver
+    permission: viaje.usar
+  viaje:
+    description: Abrir el Panel Preguntones
+    usage: /viaje
+    permission: viaje.usar
+permissions:
+  viaje.usar:
+    description: Usar el Panel Preguntones
+    default: true
+  viaje.colocar:
+    description: Atajo de staff para el Panel Preguntones
+    default: op

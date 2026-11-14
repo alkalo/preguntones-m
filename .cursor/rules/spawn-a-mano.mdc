@@ -1,0 +1,15 @@
+---
+description: El mundo de parcelas (world) no se reemplaza. Cualquier cambio se avisa, lo confirmas tú y sale de una copia del mundo actual.
+alwaysApply: true
+---
+
+# Mundo de parcelas
+
+`world` es el barrio. Ahí están las parcelas y el spawn hecho a mano. No se reemplaza.
+
+- Subir `world`, `world_nether`, `world_the_end`, `world-barrio` o cualquier archivo dentro está prohibido. El sincronizador lo rechaza. `--confirmar-mundo` no autoriza nada.
+- `level-name` sigue siendo `world`. Si `server.properties` trae otro nombre, el push se niega.
+- No ejecutes `tools/generar-barrio.mjs`, `tools/mejorar-plaza.mjs`, `tools/portales-spawn.mjs`, `tools/pintar-arcos.mjs`, `tools/pintar-bordes.mjs`, `tools/poner-boton-region.mjs` ni otro script que escriba regiones del barrio. Esos scripts tampoco pueden escribir en `servidor/world`.
+- No borres ni repintes bloques del spawn al arrancar un plugin.
+- Para leer el mundo, bájalo con `pull`. No lo subas.
+- Si piden un cambio de terreno: para. Di qué zona y qué bloques cambiarían. Espera un sí explícito. El trabajo parte de un `pull` del mundo que está ahora en el servidor. Un mundo generado no sirve, y sin esa copia no se sigue. Con el sí, el barrio se toca en el juego: el mundo no se sube.

@@ -1,0 +1,23 @@
+name: Mundos
+main: com.preguntones.mundos.MundosPlugin
+bootstrapper: com.preguntones.mundos.MundosBootstrap
+version: "1.0"
+api-version: "1.13"
+description: Mundos de juego, portal del spawn y el dragón.
+softdepend: [LuckPerms, Vault, Xo, Chunky]
+commands:
+  ciclo:
+    description: Días que faltan para renovar los mundos de juego
+    usage: /ciclo
+    permission: mundos.usar
+  grupo:
+    description: Grupo de hasta 4, desde el panel
+    usage: /grupo
+    permission: mundos.usar
+permissions:
+  mundos.usar:
+    description: Usar el portal y ver el ciclo
+    default: true
+  mundos.admin:
+    description: Reiniciar ya los mundos de juego
+    default: op

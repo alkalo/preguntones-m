@@ -1,0 +1,18 @@
+name: Bingo
+main: com.preguntones.bingo.BingoPlugin
+version: "1.0"
+api-version: "1.21"
+description: El bingo. Una hora, nueve cosas, y duros al llenarlas. Un admin lo abre.
+depend: [Vault]
+commands:
+  bingo:
+    description: Ver la carta, o abrir y cerrar una sesión
+    usage: /bingo | /bingo empezar | /bingo parar
+    permission: bingo.usar
+permissions:
+  bingo.usar:
+    description: Ver la carta cuando el bingo está abierto
+    default: true
+  bingo.admin:
+    description: Abrir o cerrar una sesión del bingo
+    default: op

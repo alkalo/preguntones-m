@@ -1,0 +1,24 @@
+{
+  "nombre": "play.preguntones.es",
+  "que_escribe_el_jugador": "play.preguntones.es",
+  "java": {
+    "abierto": true,
+    "registro": {
+      "tipo": "SRV",
+      "servicio": "_minecraft",
+      "protocolo": "_tcp",
+      "nombre": "_minecraft._tcp.play.preguntones.es",
+      "prioridad": 0,
+      "peso": 5,
+      "puerto": 25565,
+      "destino": "IP_DEL_HOST"
+    }
+  },
+  "bedrock": {
+    "abierto": false,
+    "srv": false,
+    "puerto": null,
+    "motivo": "Bedrock no está abierto, así que no lleva SRV ni puerto publicado."
+  },
+  "nota": "El jugador de Java escribe play.preguntones.es, sin puerto, y el SRV _minecraft._tcp.play.preguntones.es lo lleva al puerto 25565. El destino es el hueco IP_DEL_HOST. En el DNS, el destino de un SRV es un nombre de host: muchos paneles rechazan una IP en ese campo, así que el hueco se rellena con el nombre que apunta al host, o con la IP si el panel la acepta. Prioridad 0 y peso 5 son los valores habituales del registro. Bedrock no usa este SRV porque no está abierto. El día que se abriera tampoco lo resolvería: habría que publicar IP y puerto aparte."
+}

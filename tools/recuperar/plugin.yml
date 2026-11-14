@@ -1,0 +1,11 @@
+name: Recuperar
+main: com.preguntones.recuperar.RecuperarPlugin
+version: "1.11"
+api-version: "1.21"
+depend: [AuthMe]
+softdepend: [DiscordSRV]
+description: Código para volver a entrar si se olvida la contraseña. Llega por privado a Discord.
+commands:
+  recuperar:
+    description: Pide el código por Discord o cambia la contraseña con ese código
+    usage: /recuperar nuevo

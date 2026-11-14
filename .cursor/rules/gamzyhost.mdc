@@ -1,0 +1,19 @@
+---
+description: El servidor canónico de Preguntones es el panel de GamzyHost. La copia local se sincroniza con él.
+alwaysApply: true
+---
+
+# Servidor GamzyHost
+
+La fuente de verdad es https://panel.gamzyhost.com/server/5b8db3ae (Preguntones España, Paper 26.1.2, `preguntones.es:25565`).
+
+- SFTP: `casanovagpt381.5b8db3ae` en `de3.gamzyhost.com` puerto `2022`. La contraseña es la del panel.
+- Credenciales: `%USERPROFILE%\.preguntones\conexion.json`. No las copies al repositorio ni las pegues en el chat.
+- Mundo local: `servidor/world`. También está enlazado en `%APPDATA%\.minecraft\saves\Preguntones`.
+- `servidor/` no se commitea.
+
+Antes de leer o cambiar el mundo o los archivos del servidor, ejecuta `powershell -File scripts/sync-servidor.ps1 pull`.
+
+Un `push` sin rutas no incluye `world`, y un `push` no reinicia. Los configs y plugins se quedan en local hasta que pidan implementarlos: entonces, una sola vez, `push <rutas> --reiniciar`.
+
+El mundo del servidor es el que se juega. `world` (el barrio, las parcelas) no se sube nunca: ni regiones, ni `world-barrio`, ni otro `level-name`. Cierra el mundo en Minecraft local antes de pull o push. No subas `server.jar`, `libraries`, `logs` ni `versions`.

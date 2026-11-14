@@ -1,0 +1,15 @@
+---
+description: No reiniciar el servidor en cada cambio de Cursor. El reinicio lo pide la persona, y aplica todo lo pendiente de una vez.
+alwaysApply: true
+---
+
+# Sin reinicio por cambio
+
+Los cambios se quedan en local. El servidor sigue en marcha hasta que pidan reiniciar para implementarlos todos juntos.
+
+- No pares, arranques ni reinicies el servidor al cerrar un cambio. Ni `push --reiniciar`, ni `stop`, ni `restart`, ni una señal de power del panel.
+- Compila en local. No subas para probar cada paso.
+- Cuando pidan reiniciar, aplicar o implementar los cambios, junta todas las rutas pendientes en una sola orden: `powershell -File scripts/sync-servidor.ps1 push plugins/Uno.jar plugins/Otro.jar --reiniciar`. Esa orden comprueba todo, y solo si pasa para, sube y arranca.
+- Si la comprobación falla, no se sube nada y el servidor no se toca. No hay un atajo para saltársela.
+- Un `push` sin `--reiniciar` deja los archivos en el disco del servidor y no los carga. No lo uses para colar un reinicio.
+- El mundo de parcelas no entra en ese push. `world` no se sube.

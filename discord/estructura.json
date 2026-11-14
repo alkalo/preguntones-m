@@ -1,0 +1,292 @@
+{
+  "nombre": "Preguntones ES Minecraft",
+  "idioma": "es-ES",
+  "zona_horaria": "Europe/Madrid",
+  "discord_es_condicion_para_jugar": false,
+  "enlace_de_cuenta": "opcional",
+  "exigir_rol_de_discord_para_entrar_a_minecraft": false,
+  "comprar_miembros": false,
+  "mencionar_a_todo_el_mundo_cada_dia": false,
+  "mensajes_privados_a_desconocidos": false,
+  "codigo_de_recuperacion": "Por privado, y solo a la cuenta de Discord ya vinculada. Sin vincular no hay código. Jugar no exige Discord.",
+  "canales_publicos": ["normas", "como-jugar", "anuncios", "chat", "obras", "soporte", "voz-sabado", "charla", "tu-sala", "crear"],
+  "canal_de_consola": null,
+  "comunidad": {
+    "activada": true,
+    "idioma": "es-ES",
+    "verificacion": "correo verificado",
+    "filtro_de_contenido": "todos los miembros",
+    "avisos": "solo menciones",
+    "canal_de_normas": "normas",
+    "canal_de_avisos_de_discord": "avisos-discord",
+    "canal_de_alertas": "staff",
+    "canal_de_sistema": "como-jugar",
+    "filtro_al_entrar": true,
+    "pantalla_de_bienvenida": true,
+    "preguntas_de_entrada": true,
+    "nota": "Quien entra acepta las ocho normas antes de poder hablar. Después elige qué viene a hacer y si se pasa por la voz. La pantalla de bienvenida señala normas, como-jugar, anuncios, chat y obras. La lista de tareas de la guía nueva no la acepta la API para un bot."
+  },
+  "discordsrv_primer_dia": {
+    "unico_puente": "DiscordSRV",
+    "canal_de_chat": "chat",
+    "canal_de_consola": null,
+    "consola_remota": false,
+    "exigir_cuenta_enlazada_para_jugar": false,
+    "exigir_rol_para_jugar": false,
+    "sincronizar_roles": false,
+    "sincronizar_bans": false,
+    "sincronizar_apodos": false,
+    "recompensa_por_estar_en_discord": false,
+    "recompensa_por_boost": false
+  },
+  "bot_primer_dia": {
+    "para_que": "DiscordSRV",
+    "permisos": ["Ver canales", "Enviar mensajes", "Leer el historial de mensajes", "Insertar enlaces"],
+    "permisos_api": ["VIEW_CHANNEL", "SEND_MESSAGES", "READ_MESSAGE_HISTORY", "EMBED_LINKS"],
+    "intents": ["GUILDS", "GUILD_MESSAGES", "MESSAGE_CONTENT"],
+    "intent_privilegiado": "MESSAGE_CONTENT",
+    "no_tiene": [
+      "Gestionar roles",
+      "Gestionar canales",
+      "Gestionar apodos",
+      "Banear miembros",
+      "Expulsar miembros",
+      "Mencionar a todo el mundo",
+      "Consola"
+    ],
+    "nota": "El rol Preguntones del servidor tiene administrador: hizo falta para encender la comunidad. El canal chat sigue siendo el puente de DiscordSRV. La consola remota no se abre y no hay canal para ella."
+  },
+  "orden_de_roles": ["Admin global", "Moderador", "Usuario", "@everyone"],
+  "roles": [
+    {
+      "nombre": "Admin global",
+      "id": "1570177220922704033",
+      "orden": 1,
+      "color": "#c4512c",
+      "mostrar_por_separado": true,
+      "administrador": true,
+      "permisos": ["Administrador"],
+      "nota": "Por encima de todo. Puede tocar canales, roles, bans y ajustes. No se vende. Hay otro rol con el mismo nombre, 1570176797960568922, que no se ha tocado."
+    },
+    {
+      "nombre": "Moderador",
+      "id": "1570176096404774982",
+      "orden": 2,
+      "color": "#3d9a4a",
+      "mostrar_por_separado": true,
+      "administrador": false,
+      "quienes": "Los Preguntones de toda la vida",
+      "permisos": ["Expulsar miembros", "Silenciar miembros", "Aislar miembros temporalmente", "Gestionar mensajes", "Gestionar apodos", "Mover miembros", "Ver el registro de auditoría", "Escribir en anuncios y en normas", "Ver staff y avisos-discord"],
+      "no_tiene": ["Administrador", "Gestionar servidor", "Gestionar roles", "Gestionar canales", "Banear miembros"],
+      "nota": "Los de siempre moderan. No abren canales ni banean de forma permanente. En obras y soporte pueden cerrar posts. La sala de voz de más la abre TempVoice al entrar en crear, y la borra al vaciarse."
+    },
+    {
+      "nombre": "Usuario",
+      "id": "1570176097906065499",
+      "orden": 3,
+      "color": "#8d93a1",
+      "mostrar_por_separado": false,
+      "administrador": false,
+      "permisos": ["Ver canales públicos", "Enviar mensajes", "Conectar a la voz", "Entrar en crear", "Adjuntar archivos en obras y soporte"],
+      "no_tiene": ["Gestionar canales", "Mencionar a todo el mundo"],
+      "nota": "Quien entra a jugar. normas y anuncios siguen en solo lectura. staff y avisos-discord no se ven. No abre canales a mano: entra en crear y la sala sale sola."
+    }
+  ],
+  "categorias": [
+    {
+      "nombre": "Información",
+      "id": "1570187193111281755",
+      "canales": ["normas", "como-jugar", "anuncios"]
+    },
+    {
+      "nombre": "Comunidad",
+      "id": "1570176099315482705",
+      "canales": ["chat", "obras", "soporte"]
+    },
+    {
+      "nombre": "Voz",
+      "id": "1570187205173842070",
+      "canales": ["voz-sabado", "charla"]
+    },
+    {
+      "nombre": "Salas",
+      "id": "1570203491605942315",
+      "canales": ["tu-sala", "crear"]
+    },
+    {
+      "nombre": "Staff",
+      "id": "1570176100917842032",
+      "canales": ["staff", "avisos-discord"]
+    }
+  ],
+  "canales": [
+    {
+      "nombre": "normas",
+      "id": "1570187538642116741",
+      "tipo": "texto",
+      "publico": true,
+      "solo_lectura": true,
+      "tema": "¿Leíste esto antes de construir? Ocho líneas. Solo lectura.",
+      "nota": "Canal de reglas de la comunidad. El texto está fijado y es el mismo del popup de entrada."
+    },
+    {
+      "nombre": "como-jugar",
+      "id": "1570187546233933835",
+      "tipo": "texto",
+      "publico": true,
+      "solo_lectura": false,
+      "pausa_segundos": 20,
+      "tema": "¿Por dónde se entra? Java 26.1.2, play.preguntones.es. La guía está fijada.",
+      "se_explica": ["IP play.preguntones.es", "Java 26.1.2", "la XO del sábado a las 21:30", "duros", "pala de oro", "crear", "voz-sabado", "charla"],
+      "nota": "Aquí también cae el aviso de quién acaba de entrar, para no mezclarlo con el puente del juego."
+    },
+    {
+      "nombre": "anuncios",
+      "id": "1570176102255829195",
+      "tipo": "anuncio",
+      "publico": true,
+      "solo_lectura": true,
+      "tema": "¿Leíste las normas? Están en normas. La XO del sábado y los reinicios a las 05:00. Solo lectura.",
+      "se_publica": [
+        "la XO del sábado a las 21:30, hora peninsular",
+        "los reinicios a las 05:00, hora peninsular"
+      ]
+    },
+    {
+      "nombre": "chat",
+      "id": "1570176105833308261",
+      "tipo": "texto",
+      "publico": true,
+      "solo_lectura": false,
+      "puente": "DiscordSRV",
+      "tema": "El chat del juego sale aquí. Discord no es la llave del servidor: se entra igual sin rol."
+    },
+    {
+      "nombre": "obras",
+      "id": "1570201125343338526",
+      "tipo": "foro",
+      "vista": "galeria",
+      "publico": true,
+      "solo_lectura": false,
+      "etiqueta_obligatoria": true,
+      "tema": "¿Qué has levantado? Abre un post con una captura y una etiqueta: casa, granja, interior o duda.",
+      "etiquetas": ["guia", "casa", "granja", "interior", "duda"],
+      "nota": "guia solo la pone quien puede gestionar hilos. El post «¿Cómo se enseña una obra?» está fijado."
+    },
+    {
+      "nombre": "soporte",
+      "id": "1570201127104942080",
+      "tipo": "foro",
+      "vista": "lista",
+      "publico": true,
+      "solo_lectura": false,
+      "etiqueta_obligatoria": true,
+      "tema": "¿Se te rompió algo? Abre un post con tu nick y una etiqueta. Contestamos en horas. Ni contraseñas ni correos.",
+      "etiquetas": ["guia", "no-entro", "terreno", "duros", "otro"],
+      "nota": "Cada problema es un post. «¿Cómo se pide ayuda?» está fijado. Moderador puede cerrarlo."
+    },
+    {
+      "nombre": "voz-sabado",
+      "id": "1570203981651644506",
+      "tipo": "voz",
+      "publico": true,
+      "region": "rotterdam",
+      "tema": "Sala de la cita del sábado a las 21:30, hora peninsular. Voz en español, de España, con la región de Discord en Europa.",
+      "cita": {
+        "dia": "sábado",
+        "hora": "21:30",
+        "zona": "hora peninsular",
+        "dura": "una hora",
+        "aviso": "21:15",
+        "se_abre_sola": true
+      },
+      "nota": "Sala fija de la cita. No la crea ni la borra el bot."
+    },
+    {
+      "nombre": "tu-sala",
+      "id": "1570203494814842940",
+      "tipo": "texto",
+      "publico": true,
+      "solo_lectura": false,
+      "tema": "Desde aquí cambias el nombre, el límite y quién entra en tu sala.",
+      "nota": "Mensaje de botones de TempVoice. La sala de verdad es la de voz que se abre al entrar en crear."
+    },
+    {
+      "nombre": "crear",
+      "id": "1570203493657088050",
+      "tipo": "voz",
+      "publico": true,
+      "region": "rotterdam",
+      "temporal": false,
+      "tema": "Entra aquí y TempVoice abre una sala con tu nombre. Esa sala se borra cuando se queda vacía.",
+      "nota": "Canal creador de TempVoice. No es la sala de hablar: al entrar te mueve a una sala nueva, en Salas, y esa se borra al vaciarse."
+    },
+    {
+      "nombre": "charla",
+      "id": "1570203983551791244",
+      "tipo": "voz",
+      "publico": true,
+      "region": "rotterdam",
+      "tema": "Para cuando no es sábado y no hace falta una sala aparte."
+    },
+    {
+      "nombre": "staff",
+      "id": "1570176297370394764",
+      "tipo": "texto",
+      "publico": false,
+      "solo_lectura": false,
+      "consola": false,
+      "tema": "Los Preguntones de toda la vida y Admin global. Sin consola y sin dramas en público."
+    },
+    {
+      "nombre": "avisos-discord",
+      "id": "1570187219187138650",
+      "tipo": "texto",
+      "publico": false,
+      "solo_lectura": false,
+      "tema": "Avisos de Discord para el staff. Aquí no se anuncian los reinicios ni la XO.",
+      "nota": "Canal de actualizaciones de la comunidad. Oculto para @everyone. Lo ven Moderador y Admin global."
+    }
+  ],
+  "practicas": {
+    "comprar_miembros": false,
+    "mencionar_everyone_o_here_cada_dia": false,
+    "everyone_puede_mencionar_a_todo_el_mundo": false,
+    "everyone_puede_gestionar_canales": false,
+    "la_cita_se_anuncia_sin_mencionar_a_todo_el_mundo": true,
+    "escribir_por_privado_a_desconocidos": false,
+    "nota": "Anuncios, la XO y los reinicios se publican en el canal, sin arroba a todo el servidor. Un sábado que no se pueda se dice ahí antes, y se calla el hueco solo si nadie lo anuncia. Los avisos del Discord del juego no notifican cada frase: solo las menciones, para que el puente de chat no suene todo el rato."
+  },
+  "voz_temporal": {
+    "bot": "TempVoice",
+    "aplicacion": "762217899355013120",
+    "invitacion": "https://discord.com/oauth2/authorize?client_id=762217899355013120&permissions=395962534929&integration_type=0&scope=bot%20applications.commands&guild_id=1570169190067867678&disable_guild_select=true",
+    "canal_creador": "crear",
+    "se_borra_al_vaciarse": true,
+    "salas_fijas": ["voz-sabado", "charla"],
+    "plan": "gratis, hasta dos canales creadores",
+    "permisos": ["Ver canales", "Gestionar canales", "Enviar mensajes", "Insertar enlaces", "Leer el historial", "Conectar", "Hablar", "Mover miembros", "Gestionar roles"],
+    "no_tiene": ["Administrador"],
+    "nota": "Quien entra en crear sale movido a una sala con su nombre, en la categoría Salas. La sala desaparece al quedarse vacía. voz-sabado y charla no se crean ni se borran. El dueño cambia el nombre, el límite y quién entra con los botones de tu-sala o con /voice."
+  },
+  "evento_semanal": {
+    "id": "1570203985392963625",
+    "nombre": "XO",
+    "canal": "voz-sabado",
+    "empieza": "sábado 21:30 hora peninsular",
+    "acaba": "22:30",
+    "se_repite": "cada sábado",
+    "menciona_a_todo_el_mundo": false
+  },
+  "automod": {
+    "alertas_en": "staff",
+    "reglas": ["Invitaciones ajenas", "Spam", "Menciones en ráfaga", "Odio y contenido sexual", "Estafas"],
+    "invitacion_permitida": "https://discord.gg/ZjcnvSkqsQ",
+    "nota": "Lo aplica Discord, sin otro bot. El staff está exento. Las invitaciones de otros servidores se bloquean. La de este barrio, no."
+  },
+  "bots_mirados": {
+    "se_quedan": ["DiscordSRV", "TempVoice"],
+    "no_entran": ["VV-Bot", "Heimdall", "Marshal", "Kisumi", "MEE6"],
+    "nota": "Esos bots traen niveles, economía, rangos o consola. Aquí los duros salen de venderle a otro jugador, Discord no es la llave y la consola no se abre. Obras, soporte, el sábado y el filtro van con lo que Discord ya trae."
+  }
+}

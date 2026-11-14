@@ -1,0 +1,17 @@
+name: Susto
+main: com.preguntones.susto.SustoPlugin
+version: "1.7"
+api-version: "1.21"
+description: Cara y grito solo con el comando /susto.
+commands:
+  susto:
+    description: Prueba el susto ahora mismo
+    usage: /susto [jugador]
+    permission: susto.probar
+permissions:
+  susto.probar:
+    description: Probar el susto al momento
+    default: op
+  susto.recibir:
+    description: Puede tocarle el susto aleatorio
+    default: true

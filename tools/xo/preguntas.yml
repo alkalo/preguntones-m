@@ -1,0 +1,13 @@
+preguntas:
+  - texto: "La campaña para las elecciones del 29 de noviembre ha empezado hoy"
+    verdad: true
+  - texto: "Microsoft dice que Outlook ya va bien en todo el mundo"
+    verdad: false
+  - texto: "El derrumbe de un edificio en Brooklyn ha dejado ocho muertos"
+    verdad: true
+  - texto: "Pedro Sánchez ha abierto la campaña del PSOE en Cataluña"
+    verdad: false
+  - texto: "Jensen Huang sigue al frente de Nvidia"
+    verdad: false
+  - texto: "Colette Kress es la consejera delegada interina de Nvidia"
+    verdad: true

@@ -1,0 +1,39 @@
+name: Parcelas
+main: com.preguntones.parcelas.ParcelasPlugin
+version: "1.0"
+api-version: "1.13"
+description: Parcelas del barrio, compra y venta en duros.
+depend: [Vault]
+softdepend: [Essentials, PlaceholderAPI, Karma]
+commands:
+  parcela:
+    description: Parcelas del barrio: comprar, invitar, unir y vender al banco.
+    usage: /parcela
+    permission: parcelas.usar
+  puesto:
+    description: Tienda de adornos del barrio
+    usage: /puesto
+    permission: parcelas.usar
+  tienda:
+    description: Recuperar el género de un cofre de venta
+    usage: /tienda recuperar
+    permission: parcelas.usar
+  banco:
+    description: Pedir duros al banco del barrio
+    usage: /banco
+    permission: parcelas.usar
+  bandera:
+    description: Comprar una bandera de viaje por 40 duros
+    usage: /bandera
+    permission: parcelas.usar
+  clan:
+    description: Clan del barrio
+    usage: /clan
+    permission: parcelas.usar
+permissions:
+  parcelas.usar:
+    description: Usar el mercado de parcelas
+    default: true
+  parcelas.admin:
+    description: Modificar el spawn, los pasillos anchos y un camino estrecho que ha vuelto al barrio
+    default: op

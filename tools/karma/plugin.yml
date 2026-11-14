@@ -1,0 +1,15 @@
+name: Karma
+main: com.preguntones.karma.KarmaPlugin
+version: "1.0"
+api-version: "1.21"
+description: Karma, modo agresivo y duelos.
+softdepend: [PlaceholderAPI, Viajes, Parcelas, Mundos, Vault]
+commands:
+  karma:
+    description: "PVP: modo agresivo y duelo"
+    usage: /karma
+    permission: karma.usar
+permissions:
+  karma.usar:
+    description: Abrir el PVP y retar a un duelo
+    default: true

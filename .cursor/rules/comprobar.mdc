@@ -1,0 +1,15 @@
+---
+description: Antes de subir o aplicar cambios, la comprobación tiene que pasar. Si falla, el servidor no se toca.
+alwaysApply: true
+---
+
+# Comprobar antes de subir
+
+`push` y `reiniciar` lanzan solos `scripts/comprobar.mjs`. Compila los plugins, corre sus pruebas y las del sincronizador. Si algo falla, no entra al panel, no sube y no reinicia.
+
+- No subas por otra vía. El único envío es `scripts/sync-servidor.ps1`.
+- No añadas un argumento para saltarte la comprobación.
+- Un `push` sin `--reiniciar` también comprueba. Subir un jar roto y dejarlo para el próximo arranque cuenta como fallo.
+- Si el envío incluye un jar nuestro, ese plugin se vuelve a compilar y el jar solo se copia cuando sus pruebas pasan.
+- El mundo de parcelas no entra en el envío.
+- Para verlo sin tocar el servidor: `node scripts/comprobar.mjs`.

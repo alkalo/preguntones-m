@@ -1,0 +1,5 @@
+name: Censura
+main: com.preguntones.censura.CensuraPlugin
+version: "1.0"
+api-version: "1.21"
+description: Tapa las contraseñas de registro y login en el chat y en la consola.

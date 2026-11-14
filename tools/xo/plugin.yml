@@ -1,0 +1,15 @@
+name: Xo
+main: com.preguntones.xo.XoPlugin
+version: "1.7"
+api-version: "1.13"
+description: La XO se abre sola el sábado a las 21:30. Un admin puede abrir una sesión de una hora.
+depend: [Vault]
+softdepend: [Essentials, DiscordSRV]
+commands:
+  xo:
+    description: Abrir una sesión de la XO o cancelar la del sábado
+    usage: /xo empezar | /xo parar
+permissions:
+  xo.admin:
+    description: Abrir una sesión de la XO o cancelar la del sábado
+    default: op

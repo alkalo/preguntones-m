@@ -1,0 +1,6 @@
+name: Impulso
+main: com.preguntones.impulso.ImpulsoPlugin
+version: "1.0"
+api-version: "1.21"
+depend: [GrimAC]
+description: El tridente con Impulso en el agua o bajo la lluvia no cuenta como vuelo.

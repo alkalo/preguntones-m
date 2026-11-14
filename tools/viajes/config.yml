@@ -1,0 +1,22 @@
+# El barrio está en el centro. Estos diámetros son el mundo de fuera.
+borde:
+  overworld: 100000
+  nether: 12500
+  end: 30000
+
+viaje:
+  minimo: 1200
+  margen-borde: 400
+  intentos: 40
+  espera-segundos: 15
+  pelea-segundos: 8
+  pelea-bloques: 24
+
+teleportador:
+  mundo: world
+  x: 17
+  y: 66
+  z: 8
+
+entrada:
+  zonas-quitadas: true

@@ -1,0 +1,13 @@
+---
+description: Antes de cambiar el servidor, leer los chats recientes. Al cerrar, dejar escrito qué hace y qué falta.
+alwaysApply: true
+---
+
+# Documentar y leer los chats
+
+El comportamiento del servidor se decide entre varios chats. Un chat suelto no basta.
+
+- Antes de tocar un flujo que ya se habló (entrada, Discord, parcelas, mundos), lee los chats recientes de ese tema en los transcripts del proyecto.
+- Al cerrar el cambio, actualiza el documento de ese flujo: qué ve la persona, qué queda prohibido y qué sigue pendiente.
+- No dejes lo pendiente solo en el chat. Si no existe documento, créalo en `docs/`.
+- El mundo de parcelas no se documenta subiendo regiones.

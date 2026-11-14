@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "description": "Los progresos dicen cuántos duros dan.",
+    "min_format": [
+      101,
+      0
+    ],
+    "max_format": [
+      101,
+      1
+    ]
+  }
+}

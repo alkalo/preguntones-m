@@ -3,3 +3,25 @@
 
 # Dependencia local del sincronizador
 /scripts/node_modules/
+/tools/node_modules/
+/tools/viajes/build/
+/tools/viajes/lib/
+/tools/viajes/Viajes.jar
+/tools/mundos/build/
+/tools/mundos/lib/
+/tools/parcelas/build/
+/tools/parcelas/lib/
+/tools/parcelas/build-pruebas/
+/tools/susto/build/
+/tools/susto/build-pruebas/
+/tools/susto/node_modules/
+/tools/susto/grito.ogg
+/tools/susto/cara-ia.png
+/tools/susto/package.json
+/tools/susto/package-lock.json
+/tools/*/build/
+/tools/*/build-pruebas/
+/tools/*/build-stubs/
+/tools/impulso/lib/
+/tools/recuperar/lib/AuthMe-*.jar
+/tools/recuperar/lib/DiscordSRV-*.jar

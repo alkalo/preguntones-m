@@ -1,0 +1,14 @@
+# Días desde que empieza el ciclo hasta que el End deja pasar.
+# No borra solo: el survival sigue cayendo 48 h después del dragón.
+dias-reset: 14
+# Blazes cazados en este ciclo para entrar. Los de antes no cuentan.
+dragon-blazes: 12
+minutos-amigos: 3
+mundos:
+  survival: 2151901553968352745
+# El menú deja a la gente a hasta 1500 bloques del centro.
+# 1664 cubre ese círculo más la visión de 7 chunks.
+pregen:
+  overworld: 1664
+  nether: 400
+  fin: 256

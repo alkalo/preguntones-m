@@ -1,13 +1,13 @@
 preguntas:
-  - texto: "La campaña para las elecciones del 29 de noviembre ha empezado hoy"
+  - texto: "La FAA ya ha levantado la parada nacional de despegues en Estados Unidos"
     verdad: true
-  - texto: "Microsoft dice que Outlook ya va bien en todo el mundo"
-    verdad: false
-  - texto: "El derrumbe de un edificio en Brooklyn ha dejado ocho muertos"
+  - texto: "Sobrevivieron todos los ocupantes del crucero fluvial de Nueva Orleans"
     verdad: true
-  - texto: "Pedro Sánchez ha abierto la campaña del PSOE en Cataluña"
+  - texto: "Trump, Xi y Putin celebran hoy su cumbre en Pekín"
     verdad: false
-  - texto: "Jensen Huang sigue al frente de Nvidia"
+  - texto: "Turquía y Catar firmaron su pacto de defensa en Ankara"
     verdad: false
-  - texto: "Colette Kress es la consejera delegada interina de Nvidia"
+  - texto: "Elon Musk participará en la reunión de Trump con Xi y Putin"
+    verdad: false
+  - texto: "Olivia Wales anunció para el jueves la cumbre de Trump, Xi y Putin"
     verdad: true
